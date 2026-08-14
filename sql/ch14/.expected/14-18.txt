@@ -1,0 +1,8 @@
+A| BEGIN
+A|  id
+A| ----
+A|  36
+A| (1 row)
+A|
+B| ERROR:  55P03: could not obtain lock on row in relation "ticket"
+A| ROLLBACK

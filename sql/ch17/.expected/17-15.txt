@@ -1,0 +1,6 @@
+SET
+SET
+ my_tickets
+------------
+        171
+(1 row)

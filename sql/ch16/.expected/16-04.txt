@@ -1,0 +1,6 @@
+                        QUERY PLAN
+-----------------------------------------------------------
+ Aggregate
+   ->  Index Only Scan using ticket_customer_idx on ticket
+         Index Cond: (customer_id = 507)
+(3 rows)

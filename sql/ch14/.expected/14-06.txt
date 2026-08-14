@@ -1,0 +1,13 @@
+BEGIN
+ is_my_version
+---------------
+ f
+(1 row)
+
+UPDATE 1
+ is_my_version
+---------------
+ t
+(1 row)
+
+ROLLBACK

@@ -1,0 +1,5 @@
+DELETE 1
+ back_in_the_queue
+-------------------
+                 8
+(1 row)

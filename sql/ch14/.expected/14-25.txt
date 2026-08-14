@@ -1,0 +1,7 @@
+UPDATE 1
+UPDATE 1
+ id | job_state | attempts
+----+-----------+----------
+  1 | done      |        0
+  2 | queued    |        1
+(2 rows)

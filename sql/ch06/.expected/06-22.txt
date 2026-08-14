@@ -1,0 +1,12 @@
+            conname            | contype
+-------------------------------+---------
+ ticket_resolution_order_check | c
+ ticket_satisfaction_check     | c
+ ticket_status_check           | c
+ ticket_subject_length_check   | c
+ ticket_agent_fk               | f
+ ticket_customer_fk            | f
+ ticket_team_fk                | f
+ ticket_pkey                   | p
+ ticket_reference_key          | u
+(9 rows)

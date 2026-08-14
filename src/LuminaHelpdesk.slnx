@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Lumina.Data/Lumina.Data.csproj" />
+  <Project Path="Lumina.EfCore/Lumina.EfCore.csproj" />
+  <Project Path="Lumina.Search/Lumina.Search.csproj" />
+</Solution>

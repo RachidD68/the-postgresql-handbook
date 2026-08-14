@@ -1,0 +1,10 @@
+ reference | satisfaction
+-----------+--------------
+ LUM-1007  |            5
+ LUM-1017  |            5
+ LUM-1012  |            4
+ LUM-1004  |            3
+ LUM-1026  |            1
+ LUM-1014  |
+ LUM-1022  |
+(7 rows)

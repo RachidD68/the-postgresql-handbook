@@ -1,0 +1,14 @@
+                                    QUERY PLAN
+-----------------------------------------------------------------------------------
+ WindowAgg (actual rows=30.00 loops=1)
+   Window: w1 AS (ORDER BY (count(t.resolution_minutes)) ROWS UNBOUNDED PRECEDING)
+   ->  Sort (actual rows=30.00 loops=1)
+         Sort Key: (count(t.resolution_minutes)) DESC
+         ->  HashAggregate (actual rows=30.00 loops=1)
+               Group Key: a.full_name
+               ->  Hash Right Join (actual rows=79178.00 loops=1)
+                     Hash Cond: (t.assigned_agent_id = a.id)
+                     ->  Seq Scan on ticket t (actual rows=80040.00 loops=1)
+                     ->  Hash (actual rows=30.00 loops=1)
+                           ->  Seq Scan on agent a (actual rows=30.00 loops=1)
+(24 rows)

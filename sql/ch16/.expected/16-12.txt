@@ -1,0 +1,6 @@
+                    QUERY PLAN
+---------------------------------------------------
+ Seq Scan on ticket (actual rows=32019.00 loops=1)
+   Filter: (channel = 'email'::text)
+   Rows Removed by Filter: 48021
+(6 rows)

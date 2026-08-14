@@ -1,0 +1,10 @@
+ reference |        tags
+-----------+---------------------
+ LUM-1031  | data-export
+ LUM-1033  | mobile
+ LUM-1034  | integration
+ LUM-1036  | outage, performance
+ LUM-1037  | security
+ LUM-1039  | crash, invoice
+ LUM-1040  | feature-request
+(7 rows)

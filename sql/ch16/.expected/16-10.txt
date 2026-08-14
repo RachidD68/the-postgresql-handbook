@@ -1,0 +1,14 @@
+BEGIN
+                                    QUERY PLAN
+-----------------------------------------------------------------------------------
+ Update on ticket (actual rows=0.00 loops=1)
+   ->  Bitmap Heap Scan on ticket (actual rows=150.00 loops=1)
+         Recheck Cond: ((assigned_agent_id = 105) AND (status = 'open'::text))
+         Heap Blocks: exact=150
+         ->  Bitmap Index Scan on ticket_workload_idx (actual rows=150.00 loops=1)
+               Index Cond: ((assigned_agent_id = 105) AND (status = 'open'::text))
+               Index Searches: 1
+ Trigger ticket_touch_updated_at: calls=150
+(13 rows)
+
+ROLLBACK

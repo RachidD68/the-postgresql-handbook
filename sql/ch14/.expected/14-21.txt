@@ -1,0 +1,8 @@
+ id |    job_kind
+----+-----------------
+  1 | recompute_stats
+  2 | webhook_push
+  3 | email_customer
+  4 | recompute_stats
+  5 | webhook_push
+(5 rows)

@@ -1,0 +1,10 @@
+   full_name   | last_wrote |               says
+---------------+------------+----------------------------------
+ Priya Nair    | 2026-01-08 | Slack revoked the token during t
+ Marcus Webb   | 2026-01-12 | Entries exist in cold storage; t
+ Sofia Ramos   | 2026-01-13 | Rate table updated for 2026. Can
+ Dmitri Volkov | 2026-01-07 | We can add a free-text line unde
+ Amara Diallo  | 2026-01-09 | Happy to. I sent three slots for
+ Leo Tanaka    | 2026-01-14 | Logged as a feature request — it
+ Zara Ahmed    |            |
+(7 rows)

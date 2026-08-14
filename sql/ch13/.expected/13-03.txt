@@ -1,0 +1,7 @@
+ reference |    company_name    |       team        |    agent
+-----------+--------------------+-------------------+--------------
+ LUM-1031  | Meridian Logistics | Technical Support | Marcus Webb
+ LUM-1034  | Quartz Media       | Technical Support | Priya Nair
+ LUM-1036  | Northwind Traders  | Technical Support | (unassigned)
+ LUM-1039  | Solstice Energy    | Billing           | (unassigned)
+(4 rows)

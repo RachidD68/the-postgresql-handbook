@@ -1,0 +1,4 @@
+       name        | avg_minutes | company_avg
+-------------------+-------------+-------------
+ Technical Support |        3693 |        2713
+(1 row)

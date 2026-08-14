@@ -1,0 +1,4 @@
+ and_result | or_result
+------------+-----------
+            | t
+(1 row)

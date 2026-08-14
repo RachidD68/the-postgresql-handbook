@@ -1,0 +1,7 @@
+       status        | tickets
+---------------------+---------
+ closed              |      17
+ resolved            |       9
+ open                |       7
+ waiting_on_customer |       7
+(4 rows)

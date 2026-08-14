@@ -1,0 +1,8 @@
+ id  |                   title                   | distance
+-----+-------------------------------------------+----------
+  49 | Print jobs stall in the spooler queue     |    0.104
+ 145 | Print jobs stall in the spooler queue     |    0.104
+  97 | Printer jams when feeding multiple sheets |    0.104
+ 193 | Printer jams when feeding multiple sheets |    0.106
+ 113 | Paper repeatedly stuck in the output tray |    0.108
+(5 rows)

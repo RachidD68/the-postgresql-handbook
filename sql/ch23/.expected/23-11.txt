@@ -1,0 +1,8 @@
+ id  |                    title                    | distance
+-----+---------------------------------------------+----------
+  33 | Document feeder grabs several pages at once |   0.0000
+  49 | Print jobs stall in the spooler queue       |   0.1035
+ 145 | Print jobs stall in the spooler queue       |   0.1039
+  97 | Printer jams when feeding multiple sheets   |   0.1041
+ 193 | Printer jams when feeding multiple sheets   |   0.1062
+(5 rows)

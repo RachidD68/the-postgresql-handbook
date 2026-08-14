@@ -1,0 +1,15 @@
+                         QUERY PLAN
+-------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   ->  Seq Scan on ticket (actual rows=0.00 loops=1)
+         Filter: (upper(subject) = 'INVOICE QUESTION'::text)
+         Rows Removed by Filter: 80040
+(8 rows)
+
+                                      QUERY PLAN
+--------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   ->  Index Scan using ticket_subject_lower_idx on ticket (actual rows=0.00 loops=1)
+         Index Cond: (lower(subject) = 'invoice question'::text)
+         Index Searches: 1
+(8 rows)

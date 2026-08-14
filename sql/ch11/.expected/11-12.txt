@@ -1,0 +1,5 @@
+ reference |                          the_object                           |   os    |  app
+-----------+---------------------------------------------------------------+---------+-------
+ LUM-1004  | {"os": "iOS", "os_version": "19.2", "app_version": "4.8.1"}   | iOS     | 4.8.1
+ LUM-1033  | {"os": "Android", "os_version": "17", "app_version": "4.7.0"} | Android | 4.7.0
+(2 rows)

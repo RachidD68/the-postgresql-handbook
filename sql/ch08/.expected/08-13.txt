@@ -1,0 +1,5 @@
+   company_name    | tickets_filed
+-------------------+---------------
+ Beacon Health     |             4
+ Northwind Traders |             4
+(2 rows)

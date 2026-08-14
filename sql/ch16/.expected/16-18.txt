@@ -1,0 +1,13 @@
+                                     QUERY PLAN
+------------------------------------------------------------------------------------
+ Bitmap Heap Scan on ticket (actual rows=5700.00 loops=1)
+   Recheck Cond: ((customer_id = 507) OR (assigned_agent_id = 105))
+   Heap Blocks: exact=4456
+   ->  BitmapOr (actual rows=0.00 loops=1)
+         ->  Bitmap Index Scan on ticket_customer_idx (actual rows=100.00 loops=1)
+               Index Cond: (customer_id = 507)
+               Index Searches: 1
+         ->  Bitmap Index Scan on ticket_workload_idx (actual rows=5750.00 loops=1)
+               Index Cond: (assigned_agent_id = 105)
+               Index Searches: 1
+(16 rows)

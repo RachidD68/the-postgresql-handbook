@@ -1,0 +1,21 @@
+-- Solution to Exercise 6.2 — The PostgreSQL Handbook, Appendix D.
+-- Run against: scripts/reset-to-chapter.ps1 -Chapter 6,
+--              then sql/ch06/06-07 and 06-08 (the chapter's own FK battery).
+
+-- Defense of the shipped pairing:
+--   CASCADE toward ticket: a tag-link describes a ticket; when the ticket
+--     dies, a row saying "ticket 27 was about printers" is meaningless.
+--   RESTRICT toward tag: tags are shared vocabulary, and deleting one
+--     silently strips labels off every ticket using it.
+-- Strongest opposite case: CASCADE toward tag would make vocabulary cleanup
+-- one statement; RESTRICT toward ticket would keep tag history for audits.
+-- The test settles it:
+DELETE FROM tag WHERE name = 'printer';
+-- ERROR:  update or delete on table "tag" violates RESTRICT setting of
+--         foreign key constraint "ticket_tag_tag_fk" on table "ticket_tag"
+-- DETAIL: Key (id)=(20) is referenced from table "ticket_tag".
+--
+-- The database refuses (SQLSTATE 23001): LUM-1027 still wears the label, so
+-- the vocabulary entry stays. Under the opposite pairing this DELETE would
+-- have silently unlabeled a live ticket — exactly the outcome RESTRICT exists
+-- to make loud.

@@ -1,0 +1,13 @@
+       team        | total | closed
+-------------------+-------+--------
+ Billing           |    12 |      6
+ Onboarding        |     7 |      4
+ Technical Support |    21 |      7
+(3 rows)
+
+       team        | total | closed | open |     avg_score
+-------------------+-------+--------+------+--------------------
+ Billing           |    12 |      6 |    1 | 4.0000000000000000
+ Onboarding        |     7 |      4 |    0 | 4.5000000000000000
+ Technical Support |    21 |      7 |    6 | 3.6000000000000000
+(3 rows)

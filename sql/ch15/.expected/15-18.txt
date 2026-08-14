@@ -1,0 +1,23 @@
+CREATE INDEX
+                                   QUERY PLAN
+---------------------------------------------------------------------------------
+ Aggregate
+   ->  Bitmap Heap Scan on ticket
+         Recheck Cond: (custom_fields @> '{"device": {"os": "iOS"}}'::jsonb)
+         ->  Bitmap Index Scan on ticket_custom_fields_gin
+               Index Cond: (custom_fields @> '{"device": {"os": "iOS"}}'::jsonb)
+(5 rows)
+
+                           QUERY PLAN
+-----------------------------------------------------------------
+ Aggregate
+   ->  Bitmap Heap Scan on ticket
+         Recheck Cond: (search_tsv @@ '''export'''::tsquery)
+         ->  Bitmap Index Scan on ticket_search_idx
+               Index Cond: (search_tsv @@ '''export'''::tsquery)
+(5 rows)
+
+ gin_docs | gin_search
+----------+------------
+ 368 kB   | 11 MB
+(1 row)

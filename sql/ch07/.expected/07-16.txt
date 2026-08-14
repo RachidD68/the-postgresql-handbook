@@ -1,0 +1,9 @@
+     agent     | reports_to
+---------------+-------------
+ Priya Nair    |
+ Marcus Webb   | Priya Nair
+ Sofia Ramos   |
+ Dmitri Volkov | Sofia Ramos
+ Amara Diallo  |
+ Leo Tanaka    | Priya Nair
+(6 rows)

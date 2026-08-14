@@ -1,0 +1,10 @@
+       chart
+-------------------
+ Priya Nair
+ Sofia Ramos
+ Amara Diallo
+     Marcus Webb
+     Dmitri Volkov
+     Leo Tanaka
+     Zara Ahmed
+(7 rows)

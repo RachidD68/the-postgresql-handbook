@@ -1,0 +1,4 @@
+   full_name   |   company_name   | score
+---------------+------------------+-------
+ Fiona O'Brien | Harbor Analytics |  0.56
+(1 row)

@@ -1,0 +1,5 @@
+INSERT 0 1
+ event_kind | payload
+------------+---------
+ demo_note  | {}
+(1 row)

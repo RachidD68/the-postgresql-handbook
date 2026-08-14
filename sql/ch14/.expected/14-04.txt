@@ -1,0 +1,12 @@
+BEGIN
+INSERT 0 1
+SAVEPOINT
+ERROR:  duplicate key value violates unique constraint "tag_name_key"
+DETAIL:  Key (name)=(billing) already exists.
+ROLLBACK
+ new_tags
+----------
+        1
+(1 row)
+
+ROLLBACK

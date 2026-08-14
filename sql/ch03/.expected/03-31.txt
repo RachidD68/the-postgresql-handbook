@@ -1,0 +1,6 @@
+ ticket_id | tag_id
+-----------+--------
+        40 |     10
+(1 row)
+
+DELETE 1

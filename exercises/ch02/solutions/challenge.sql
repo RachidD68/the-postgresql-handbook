@@ -1,0 +1,13 @@
+-- Solution to Exercise 2.3 — The PostgreSQL Handbook, Appendix D.
+-- Run against: (paper exercise — no SQL required; notes below)
+
+-- Fiona changes her email address. In helpdesk_sheet, her address is copied
+-- into EVERY row for every ticket she ever filed — each one must change.
+--
+-- If one row spells her "Fiona OBrien" (no apostrophe), any correction keyed
+-- on her name misses that row: the sheet then claims two different people
+-- with two different addresses, one of them stale. That is an update anomaly.
+--
+-- In the normalized customer table her email lives in exactly one cell of
+-- exactly one row; tickets reference her id, which never changes. The
+-- corruption is impossible by construction — there is nothing to miss.

@@ -1,0 +1,10 @@
+                                     QUERY PLAN
+-------------------------------------------------------------------------------------
+ Nested Loop (actual rows=100.00 loops=1)
+   ->  Index Scan using customer_pkey on customer c (actual rows=1.00 loops=1)
+         Index Cond: (id = 507)
+         Index Searches: 1
+   ->  Index Scan using ticket_customer_idx on ticket t (actual rows=100.00 loops=1)
+         Index Cond: (customer_id = 507)
+         Index Searches: 1
+(12 rows)

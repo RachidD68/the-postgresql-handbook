@@ -1,0 +1,4 @@
+                 payload                  | arrow_one | arrow_two | one_is | two_is
+------------------------------------------+-----------+-----------+--------+--------
+ {"channel": "email", "priority": "high"} | "email"   | email     | jsonb  | text
+(1 row)

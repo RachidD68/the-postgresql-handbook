@@ -1,0 +1,4 @@
+     both_words     |    either_word     |    exact_phrase    |    minus_mobile
+--------------------+--------------------+--------------------+---------------------
+ 'export' & 'crash' | 'export' | 'crash' | 'blank' <-> 'page' | 'export' & !'mobil'
+(1 row)

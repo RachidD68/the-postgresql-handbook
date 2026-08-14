@@ -1,0 +1,22 @@
+A| BEGIN
+A|  satisfaction
+A| --------------
+A|             2
+A| (1 row)
+A|
+B| BEGIN
+B|  satisfaction
+B| --------------
+B|             2
+B| (1 row)
+B|
+A| UPDATE 1
+A| COMMIT
+B| UPDATE 1
+B| COMMIT
+A|  after_two_increments
+A| ----------------------
+A|                     3
+A| (1 row)
+A|
+A| UPDATE 1

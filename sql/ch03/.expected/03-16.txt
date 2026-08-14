@@ -1,0 +1,4 @@
+ reference | status | assigned_agent_id | first_response_at
+-----------+--------+-------------------+-------------------
+ LUM-1036  | open   |                   |
+(1 row)

@@ -1,0 +1,6 @@
+ id  |               title               | dims
+-----+-----------------------------------+------
+ 201 | Scanner grabs two pages at a time |  768
+(1 row)
+
+INSERT 0 1

@@ -1,0 +1,6 @@
+UPDATE 1
+ reference | touched | clock_sane
+-----------+---------+------------
+ LUM-1001  | f       |
+ LUM-1002  | t       | t
+(2 rows)

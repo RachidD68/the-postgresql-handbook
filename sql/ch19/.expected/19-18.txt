@@ -1,0 +1,8 @@
+CREATE INDEX
+          partition_index           |  on_disk
+------------------------------------+------------
+ ticket_event_2025_07_ticket_id_idx | 8192 bytes
+ ticket_event_2025_09_ticket_id_idx | 880 kB
+ ticket_event_2025_10_ticket_id_idx | 904 kB
+ ticket_event_2025_11_ticket_id_idx | 880 kB
+(4 rows)

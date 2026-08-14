@@ -1,0 +1,11 @@
+SELECT 80040
+UPDATE 80040
+ pg_stat_force_next_flush
+--------------------------
+
+(1 row)
+
+ n_live_tup | n_dead_tup | on_disk
+------------+------------+---------
+      80040 |      80040 | 86 MB
+(1 row)

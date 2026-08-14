@@ -1,0 +1,11 @@
+       team        | priority | tickets
+-------------------+----------+---------
+ Billing           |          |      12
+ Onboarding        |          |       7
+ Technical Support |          |      21
+                   | low      |      10
+                   | normal   |      15
+                   | high     |      10
+                   | urgent   |       5
+                   |          |      40
+(8 rows)

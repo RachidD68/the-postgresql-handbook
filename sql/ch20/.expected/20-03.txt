@@ -1,0 +1,3 @@
+ application_name | state | write_lag | flush_lag | replay_lag
+------------------+-------+-----------+-----------+------------
+(0 rows)

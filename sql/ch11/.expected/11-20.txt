@@ -1,0 +1,12 @@
+               document
+--------------------------------------
+ {                                   +
+     "tags": [                       +
+         "outage",                   +
+         "performance"               +
+     ],                              +
+     "status": "open",               +
+     "customer": "Northwind Traders",+
+     "reference": "LUM-1036"         +
+ }
+(1 row)

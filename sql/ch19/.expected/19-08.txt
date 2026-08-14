@@ -1,0 +1,4 @@
+    physical_table    | count
+----------------------+-------
+ ticket_event_2025_12 | 83284
+(1 row)

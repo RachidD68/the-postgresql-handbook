@@ -1,0 +1,21 @@
+                                     document
+-----------------------------------------------------------------------------------
+ {                                                                                +
+     "subject": "Trial expired before we finished setup",                         +
+     "comments": [                                                                +
+         {                                                                        +
+             "body": "Migration ran long and the trial locked us out mid-import.",+
+             "author": "customer"                                                 +
+         },                                                                       +
+         {                                                                        +
+             "body": "Extended your trial 14 days and unlocked the workspace.",   +
+             "author": "agent"                                                    +
+         },                                                                       +
+         {                                                                        +
+             "body": "Import finished. We will be subscribing this week.",        +
+             "author": "customer"                                                 +
+         }                                                                        +
+     ],                                                                           +
+     "reference": "LUM-1013"                                                      +
+ }
+(1 row)

@@ -1,0 +1,10 @@
+CREATE VIEW
+   full_name   |       team        | open_tickets
+---------------+-------------------+--------------
+ Leo Tanaka    | Technical Support |            2
+ Marcus Webb   | Technical Support |            2
+ Priya Nair    | Technical Support |            1
+ Amara Diallo  | Onboarding        |            0
+ Dmitri Volkov | Billing           |            0
+ Sofia Ramos   | Billing           |            0
+(6 rows)

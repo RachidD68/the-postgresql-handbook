@@ -1,0 +1,12 @@
+ reference |    company_name    |       team        |    agent    |       tag
+-----------+--------------------+-------------------+-------------+-----------------
+ LUM-1031  | Meridian Logistics | Technical Support | Marcus Webb | data-export
+ LUM-1033  | Atelier Moreau     | Technical Support | Leo Tanaka  | mobile
+ LUM-1034  | Quartz Media       | Technical Support | Priya Nair  | integration
+ LUM-1036  | Northwind Traders  | Technical Support |             | outage
+ LUM-1036  | Northwind Traders  | Technical Support |             | performance
+ LUM-1037  | Beacon Health      | Technical Support | Marcus Webb | security
+ LUM-1039  | Solstice Energy    | Billing           |             | crash
+ LUM-1039  | Solstice Energy    | Billing           |             | invoice
+ LUM-1040  | Harbor Analytics   | Technical Support | Leo Tanaka  | feature-request
+(9 rows)

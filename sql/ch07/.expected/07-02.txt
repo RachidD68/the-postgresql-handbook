@@ -1,0 +1,4 @@
+ every_possible_pairing
+------------------------
+                    480
+(1 row)

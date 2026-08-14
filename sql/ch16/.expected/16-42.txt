@@ -1,0 +1,14 @@
+                                            QUERY PLAN
+---------------------------------------------------------------------------------------------------
+ Sort (actual rows=30.00 loops=1)
+   Sort Key: ((SubPlan 1)) DESC
+   ->  Seq Scan on agent a (actual rows=30.00 loops=1)
+         SubPlan 1
+           ->  Aggregate (actual rows=1.00 loops=30)
+                 ->  Bitmap Heap Scan on ticket t (actual rows=2639.27 loops=30)
+                       Recheck Cond: (assigned_agent_id = a.id)
+                       Heap Blocks: exact=62624
+                       ->  Bitmap Index Scan on ticket_workload_idx (actual rows=2644.27 loops=30)
+                             Index Cond: (assigned_agent_id = a.id)
+                             Index Searches: 30
+(19 rows)

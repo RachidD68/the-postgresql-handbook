@@ -1,0 +1,5 @@
+         indexname         | on_disk
+---------------------------+---------
+ ticket_assigned_agent_idx | 576 kB
+ ticket_workload_idx       | 3960 kB
+(2 rows)

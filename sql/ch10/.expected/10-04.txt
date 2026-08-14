@@ -1,0 +1,9 @@
+ reference |       team        | resolution_minutes | team_avg
+-----------+-------------------+--------------------+----------
+ LUM-1016  | Technical Support |               6228 |     3693
+ LUM-1020  | Technical Support |               6219 |     3693
+ LUM-1024  | Technical Support |               6098 |     3693
+ LUM-1004  | Technical Support |               5935 |     3693
+ LUM-1019  | Billing           |               5671 |     2002
+ LUM-1023  | Onboarding        |               5560 |     1419
+(6 rows)

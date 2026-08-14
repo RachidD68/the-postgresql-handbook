@@ -1,0 +1,4 @@
+ full_name
+------------
+ Zara Ahmed
+(1 row)

@@ -1,0 +1,9 @@
+ rows_returned
+---------------
+             1
+(1 row)
+
+ rows_returned
+---------------
+         80040
+(1 row)

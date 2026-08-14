@@ -1,0 +1,13 @@
+        never_scanned
+-----------------------------
+ ticket_assigned_agent_idx
+ ticket_custom_fields_gin
+ ticket_customer_idx
+ ticket_open_created_idx
+ ticket_open_duplicate_guard
+ ticket_search_idx
+ ticket_subject_lower_idx
+ ticket_team_idx
+ ticket_team_status_idx
+ ticket_workload_idx
+(10 rows)

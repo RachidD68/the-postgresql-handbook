@@ -1,0 +1,13 @@
+                                        QUERY PLAN
+-------------------------------------------------------------------------------------------
+ Aggregate
+   ->  Append
+         ->  Seq Scan on ticket_event_2026_01 ticket_event_1
+               Filter: (occurred_at >= '2026-01-01 00:00:00+00'::timestamp with time zone)
+         ->  Seq Scan on ticket_event_2026_02 ticket_event_2
+               Filter: (occurred_at >= '2026-01-01 00:00:00+00'::timestamp with time zone)
+         ->  Seq Scan on ticket_event_2026_03 ticket_event_3
+               Filter: (occurred_at >= '2026-01-01 00:00:00+00'::timestamp with time zone)
+         ->  Seq Scan on ticket_event_default ticket_event_4
+               Filter: (occurred_at >= '2026-01-01 00:00:00+00'::timestamp with time zone)
+(10 rows)

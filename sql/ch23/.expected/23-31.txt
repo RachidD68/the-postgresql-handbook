@@ -1,0 +1,11 @@
+                     title                     | rrf_score
+-----------------------------------------------+-----------
+ Printer jams when feeding multiple sheets     |   0.03150
+ Printer jams when feeding multiple sheets     |   0.03132
+ Printer jams when feeding multiple sheets     |   0.03077
+ Printer driver missing after a Windows update |   0.03062
+ Printer driver missing after a Windows update |   0.03033
+ Document feeder grabs several pages at once   |   0.01639
+ Print jobs stall in the spooler queue         |   0.01613
+ Print jobs stall in the spooler queue         |   0.01587
+(8 rows)

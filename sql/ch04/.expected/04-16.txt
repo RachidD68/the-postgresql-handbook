@@ -1,0 +1,9 @@
+ with_not_equal
+----------------
+             20
+(1 row)
+
+ with_is_distinct
+------------------
+               39
+(1 row)

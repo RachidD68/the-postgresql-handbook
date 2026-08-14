@@ -1,0 +1,10 @@
+NOTICE:  relation "kb_article_metadata_gin" already exists, skipping
+CREATE INDEX
+                    title                    | distance
+---------------------------------------------+----------
+ Document feeder grabs several pages at once |   0.0000
+ Print jobs stall in the spooler queue       |   0.1035
+ Print jobs stall in the spooler queue       |   0.1039
+ Printer jams when feeding multiple sheets   |   0.1041
+ Printer jams when feeding multiple sheets   |   0.1062
+(5 rows)

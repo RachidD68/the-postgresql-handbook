@@ -1,0 +1,7 @@
+ reference |    company_name    |  rank  |                matched_title
+-----------+--------------------+--------+---------------------------------------------
+ LUM-1001  | Northwind Traders  | 0.3344 | API returns 429 for batch <b>export</b>
+ LUM-1014  | Beacon Health      | 0.3344 | <b>Exported</b> PDF is blank on second page
+ LUM-1031  | Meridian Logistics | 0.3344 | Data <b>export</b> stuck at 90 percent
+ LUM-1004  | Beacon Health      | 0.3040 | Mobile app <b>crashes</b> on photo upload
+(4 rows)

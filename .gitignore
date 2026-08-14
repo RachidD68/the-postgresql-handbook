@@ -1,0 +1,12 @@
+# .NET (src/ — Ch21-23)
+bin/
+obj/
+.vs/
+*.user
+
+# Local environment
+.env
+
+# Editor
+.idea/
+*.swp

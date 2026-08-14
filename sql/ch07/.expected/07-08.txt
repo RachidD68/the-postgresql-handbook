@@ -1,0 +1,6 @@
+ id | full_name
+----+-----------
+ 13 | Wei Zhang
+(1 row)
+
+INSERT 0 1

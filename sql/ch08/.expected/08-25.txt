@@ -1,0 +1,18 @@
+     agent     |  week_of   | tickets
+---------------+------------+---------
+ Dmitri Volkov | 2025-12-15 |       1
+ Leo Tanaka    | 2025-12-15 |       1
+ Marcus Webb   | 2025-12-15 |       1
+ Priya Nair    | 2025-12-15 |       1
+ Amara Diallo  | 2025-12-22 |       1
+ Priya Nair    | 2025-12-22 |       1
+ Sofia Ramos   | 2025-12-29 |       1
+ Amara Diallo  | 2026-01-05 |       1
+ Dmitri Volkov | 2026-01-05 |       1
+ Leo Tanaka    | 2026-01-05 |       1
+ Marcus Webb   | 2026-01-05 |       1
+ Priya Nair    | 2026-01-05 |       1
+ Leo Tanaka    | 2026-01-12 |       1
+ Marcus Webb   | 2026-01-12 |       1
+ Sofia Ramos   | 2026-01-12 |       1
+(15 rows)

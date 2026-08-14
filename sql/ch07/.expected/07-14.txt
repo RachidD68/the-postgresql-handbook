@@ -1,0 +1,5 @@
+INSERT 0 1
+   tag_name   | ticket_id
+--------------+-----------
+ beta-program |
+(1 row)

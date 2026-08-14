@@ -1,0 +1,7 @@
+   company_name    | tickets_filed
+-------------------+---------------
+ Beacon Health     |             4
+ Harbor Analytics  |             4
+ Northwind Traders |             4
+ Solstice Energy   |             4
+(4 rows)

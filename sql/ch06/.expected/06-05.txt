@@ -1,0 +1,4 @@
+ id  | ticket_id |           body
+-----+-----------+---------------------------
+ 121 |        41 | I will outlive my ticket.
+(1 row)

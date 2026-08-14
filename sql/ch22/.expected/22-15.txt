@@ -1,0 +1,8 @@
+ full_name | resolved_tickets | leaderboard_rank
+-----------+------------------+------------------
+ Agent 11  |             4620 |                1
+ Agent 23  |             4620 |                1
+ Agent 05  |             4590 |                3
+ Agent 17  |             4590 |                3
+ Agent 02  |             3450 |                5
+(5 rows)

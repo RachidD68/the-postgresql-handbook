@@ -1,0 +1,10 @@
+GRANT
+SET
+ reference |    team    | priority
+-----------+------------+----------
+ LUM-10021 | Onboarding | normal
+ LUM-10028 | Billing    | normal
+ LUM-10059 | Billing    | normal
+(3 rows)
+
+RESET

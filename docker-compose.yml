@@ -1,0 +1,49 @@
+# The PostgreSQL Handbook — companion environment (Chapter 1)
+#
+# One `docker compose up -d` gives you PostgreSQL 18 and pgAdmin, identical to the
+# environment every listing in the book was verified against.
+#
+# The image is pgvector/pgvector:pg18 — the official postgres:18 image plus the
+# pgvector extension — so the database you set up in Chapter 1 still works when
+# Chapter 23 adds semantic search. Nothing else differs from stock PostgreSQL 18.
+
+services:
+  db:
+    image: pgvector/pgvector:pg18
+    container_name: lumina-db
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-lumina}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - lumina-data:/var/lib/postgresql/data
+    # Server-level settings that keep the book's EXPLAIN output reproducible.
+    # Session/database-level knobs (jit, work_mem, ...) are pinned by
+    # scripts/reset-to-chapter.ps1 via ALTER DATABASE, so they apply on any server.
+    command: >
+      postgres
+      -c shared_buffers=512MB
+      -c effective_cache_size=2GB
+      -c max_parallel_workers_per_gather=2
+      -c shared_preload_libraries=pg_stat_statements
+      -c wal_level=logical
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: lumina-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@lumina.local}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-lumina}
+    ports:
+      - "${PGADMIN_PORT:-8080}:80"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  lumina-data:

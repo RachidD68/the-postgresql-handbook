@@ -1,0 +1,7 @@
+       team        | tickets | avg_minutes
+-------------------+---------+-------------
+ Billing           |      12 |        2002
+ Onboarding        |       7 |        1419
+ Technical Support |      21 |        3693
+ ALL TEAMS         |      40 |        2713
+(4 rows)

@@ -1,0 +1,9 @@
+       team        |   full_name   |  newest_hire
+-------------------+---------------+---------------
+ Billing           | Sofia Ramos   | Dmitri Volkov
+ Billing           | Dmitri Volkov | Dmitri Volkov
+ Onboarding        | Amara Diallo  | Amara Diallo
+ Technical Support | Priya Nair    | Leo Tanaka
+ Technical Support | Marcus Webb   | Leo Tanaka
+ Technical Support | Leo Tanaka    | Leo Tanaka
+(6 rows)

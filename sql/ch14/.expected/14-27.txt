@@ -1,0 +1,24 @@
+A|  got_it
+A| --------
+A|  t
+A| (1 row)
+A|
+B|  got_it
+B| --------
+B|  f
+B| (1 row)
+B|
+A|  released
+A| ----------
+A|  t
+A| (1 row)
+A|
+B|  got_it
+B| --------
+B|  t
+B| (1 row)
+B|
+B|  released
+B| ----------
+B|  t
+B| (1 row)

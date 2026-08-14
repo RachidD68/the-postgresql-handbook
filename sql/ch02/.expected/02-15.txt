@@ -1,0 +1,14 @@
+               List of tables
+ Schema |      Name      | Type  |  Owner
+--------+----------------+-------+----------
+ lumina | agent          | table | postgres
+ lumina | attachment     | table | postgres
+ lumina | customer       | table | postgres
+ lumina | sla_policy     | table | postgres
+ lumina | tag            | table | postgres
+ lumina | team           | table | postgres
+ lumina | ticket         | table | postgres
+ lumina | ticket_comment | table | postgres
+ lumina | ticket_event   | table | postgres
+ lumina | ticket_tag     | table | postgres
+(10 rows)

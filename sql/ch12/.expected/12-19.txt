@@ -1,0 +1,5 @@
+ reference |              subject               |  rank  | rank_cd
+-----------+------------------------------------+--------+---------
+ LUM-1011  | Enterprise invoice needs PO number | 0.9943 |  0.5562
+ LUM-1003  | Invoice shows wrong VAT number     | 0.9817 |  0.4405
+(2 rows)

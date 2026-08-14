@@ -1,0 +1,5 @@
+ reference |           subject
+-----------+-----------------------------
+ LUM-1005  | Double-charged for November
+ LUM-1026  | Two-factor codes rejected
+(2 rows)

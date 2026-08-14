@@ -1,0 +1,16 @@
+A| BEGIN
+A| SET
+A| UPDATE 1
+B| BEGIN
+B| SET
+B| UPDATE 1
+A| (now waiting -- this terminal just hangs)
+B| (now waiting -- this terminal just hangs)
+A| ERROR:  40P01: deadlock detected
+A| DETAIL:  process N waits for ShareLock on transaction N; blocked by process N.
+A| process N waits for ShareLock on transaction N; blocked by process N.
+A| HINT:  See server log for query details.
+A| CONTEXT:  while locking tuple (0,2) in relation "ticket"
+B| UPDATE 1
+A| ROLLBACK
+B| ROLLBACK

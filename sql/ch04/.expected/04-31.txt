@@ -1,0 +1,10 @@
+ reference | priority |                subject
+-----------+----------+----------------------------------------
+ LUM-1036  | urgent   | Latency spike on EU endpoints
+ LUM-1031  | high     | Data export stuck at 90 percent
+ LUM-1034  | high     | Slack integration stopped posting
+ LUM-1039  | high     | Invoice PDF download returns 404
+ LUM-1033  | normal   | Mobile notifications arrive twice
+ LUM-1037  | normal   | Audit log missing yesterday's entries
+ LUM-1040  | low      | Feature request: dark mode for reports
+(7 rows)

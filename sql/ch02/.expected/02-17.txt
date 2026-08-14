@@ -1,0 +1,21 @@
+                                       Table "lumina.ticket"
+      Column       |           Type           | Collation | Nullable |           Default
+-------------------+--------------------------+-----------+----------+------------------------------
+ id                | bigint                   |           | not null | generated always as identity
+ reference         | text                     |           | not null |
+ customer_id       | bigint                   |           | not null |
+ assigned_agent_id | bigint                   |           |          |
+ team_id           | bigint                   |           | not null |
+ subject           | text                     |           | not null |
+ body              | text                     |           | not null |
+ status            | text                     |           | not null |
+ priority          | text                     |           | not null |
+ channel           | text                     |           | not null |
+ created_at        | timestamp with time zone |           | not null |
+ first_response_at | timestamp with time zone |           |          |
+ resolved_at       | timestamp with time zone |           |          |
+ closed_at         | timestamp with time zone |           |          |
+ satisfaction      | smallint                 |           |          |
+Indexes:
+    "ticket_pkey" PRIMARY KEY, btree (id)
+    "ticket_reference_key" UNIQUE CONSTRAINT, btree (reference)

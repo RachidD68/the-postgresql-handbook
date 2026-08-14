@@ -1,0 +1,8 @@
+CREATE INDEX
+CREATE INDEX
+ brin  | btree
+-------+-------
+ 24 kB | 11 MB
+(1 row)
+
+DROP INDEX

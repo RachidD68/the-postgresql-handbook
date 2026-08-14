@@ -1,0 +1,16 @@
+A| BEGIN
+A|  id
+A| ----
+A|   6
+A|   7
+A| (2 rows)
+A|
+B| BEGIN
+B|  id
+B| ----
+B|   8
+B|   9
+B| (2 rows)
+B|
+A| ROLLBACK
+B| ROLLBACK

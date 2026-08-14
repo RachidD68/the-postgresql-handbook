@@ -1,0 +1,5 @@
+ reference | priority |             subject
+-----------+----------+----------------------------------
+ LUM-1036  | urgent   | Latency spike on EU endpoints
+ LUM-1039  | high     | Invoice PDF download returns 404
+(2 rows)

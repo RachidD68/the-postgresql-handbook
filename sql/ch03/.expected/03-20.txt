@@ -1,0 +1,5 @@
+UPDATE 1
+ reference | status | assigned_agent_id |   first_response_at
+-----------+--------+-------------------+------------------------
+ LUM-1036  | open   |                 1 | 2026-01-15 09:12:00+00
+(1 row)

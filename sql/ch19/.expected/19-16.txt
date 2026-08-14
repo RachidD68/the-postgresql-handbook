@@ -1,0 +1,9 @@
+ august_survives
+-----------------
+           83259
+(1 row)
+
+ oldest_still_inside
+---------------------
+ 2025-09-01
+(1 row)

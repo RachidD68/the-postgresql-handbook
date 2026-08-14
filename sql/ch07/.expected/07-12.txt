@@ -1,0 +1,4 @@
+ full_name |   company_name
+-----------+------------------
+ Wei Zhang | Nimbus Analytics
+(1 row)

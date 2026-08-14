@@ -1,0 +1,7 @@
+ channel
+---------
+ chat
+ email
+ phone
+ web
+(4 rows)

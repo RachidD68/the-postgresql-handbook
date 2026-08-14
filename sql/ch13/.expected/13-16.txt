@@ -1,0 +1,6 @@
+ reference |       age        |         summary
+-----------+------------------+--------------------------
+ LUM-1001  | 73 days 00:46:00 | resolved in 1876 minutes
+ LUM-1031  | 10 days 00:24:00 | open since 2026-01-05
+ LUM-1036  | 3 days 01:09:00  | open since 2026-01-12
+(3 rows)

@@ -1,0 +1,8 @@
+ rank |                     title                     | distance
+------+-----------------------------------------------+----------
+    1 | Document feeder grabs several pages at once   |    0.000
+    2 | Print jobs stall in the spooler queue         |    0.104
+    8 | Printer driver missing after a Windows update |    0.111
+   40 | Layout overlaps in Firefox only               |    0.936
+  200 | Ticket list takes ten seconds to load         |    1.103
+(5 rows)

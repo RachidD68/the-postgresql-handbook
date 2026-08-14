@@ -1,0 +1,16 @@
+CREATE INDEX
+                              QUERY PLAN
+-----------------------------------------------------------------------
+ Aggregate
+   ->  Bitmap Heap Scan on ticket
+         Recheck Cond: (lower(subject) = 'invoice question'::text)
+         ->  Bitmap Index Scan on ticket_subject_lower_idx
+               Index Cond: (lower(subject) = 'invoice question'::text)
+(5 rows)
+
+                      QUERY PLAN
+------------------------------------------------------
+ Aggregate
+   ->  Seq Scan on ticket
+         Filter: (subject = 'Invoice question'::text)
+(3 rows)

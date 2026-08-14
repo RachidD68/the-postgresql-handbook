@@ -1,0 +1,9 @@
+ says_crash
+------------
+          0
+(1 row)
+
+ reference |              subject
+-----------+------------------------------------
+ LUM-1004  | Mobile app crashes on photo upload
+(1 row)

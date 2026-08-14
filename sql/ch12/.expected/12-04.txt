@@ -1,0 +1,4 @@
+         crash_trigrams          |         crush_trigrams          | how_alike
+---------------------------------+---------------------------------+------------
+ {"  c"," cr",ash,cra,ras,"sh "} | {"  c"," cr",cru,rus,"sh ",ush} | 0.33333334
+(1 row)

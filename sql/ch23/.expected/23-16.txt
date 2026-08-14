@@ -1,0 +1,23 @@
+                                QUERY PLAN
+---------------------------------------------------------------------------
+ Limit
+   InitPlan 1
+     ->  Limit
+           ->  Index Scan using kb_article_pkey on kb_article kb_article_1
+                 Filter: (title ~~ 'Document feeder%'::text)
+   ->  Sort
+         Sort Key: ((kb_article.embedding <=> (InitPlan 1).col1))
+         ->  Seq Scan on kb_article
+(8 rows)
+
+SET
+                                QUERY PLAN
+---------------------------------------------------------------------------
+ Limit
+   InitPlan 1
+     ->  Limit
+           ->  Index Scan using kb_article_pkey on kb_article kb_article_1
+                 Filter: (title ~~ 'Document feeder%'::text)
+   ->  Index Scan using kb_article_embedding_hnsw on kb_article
+         Order By: (embedding <=> (InitPlan 1).col1)
+(7 rows)

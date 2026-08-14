@@ -1,0 +1,12 @@
+   full_name   | reference | resolution_minutes
+---------------+-----------+--------------------
+ Marcus Webb   | LUM-1016  |               6228
+ Leo Tanaka    | LUM-1020  |               6219
+ Priya Nair    | LUM-1024  |               6098
+ Marcus Webb   | LUM-1004  |               5935
+ Priya Nair    | LUM-1012  |               5392
+ Leo Tanaka    | LUM-1014  |               4607
+ Priya Nair    | LUM-1001  |               1876
+ Dmitri Volkov | LUM-1011  |               1410
+ Leo Tanaka    | LUM-1007  |                272
+(9 rows)

@@ -1,0 +1,14 @@
+                           Partitioned table "lumina.ticket_event"
+   Column    |           Type           | Collation | Nullable |           Default
+-------------+--------------------------+-----------+----------+------------------------------
+ id          | bigint                   |           | not null | generated always as identity
+ ticket_id   | bigint                   |           | not null |
+ event_kind  | text                     |           | not null |
+ payload     | jsonb                    |           | not null | '{}'::jsonb
+ occurred_at | timestamp with time zone |           | not null |
+Partition key: RANGE (occurred_at)
+Indexes:
+    "ticket_event_p_pkey" PRIMARY KEY, btree (id, occurred_at)
+Foreign-key constraints:
+    "event_ticket_fk" FOREIGN KEY (ticket_id) REFERENCES ticket(id) ON DELETE CASCADE
+Number of partitions: 9 (Use \d+ to list them.)

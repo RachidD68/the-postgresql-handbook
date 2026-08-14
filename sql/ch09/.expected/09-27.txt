@@ -1,0 +1,15 @@
+ reference |   on_day   |                   says
+-----------+------------+------------------------------------------
+ LUM-1031  | 2026-01-07 | Still at 90% this morning. What is the E
+ LUM-1031  | 2026-01-05 | The export worker crashed on a corrupted
+ LUM-1031  | 2026-01-05 | Export id EXP-99120 has displayed 90% si
+ LUM-1034  | 2026-01-09 | Our workspace admin is on leave; reautho
+ LUM-1034  | 2026-01-08 | Slack revoked the token during their Jan
+ LUM-1034  | 2026-01-08 | Nothing has posted to #support since Jan
+ LUM-1036  | 2026-01-13 | Second business day with no response on
+ LUM-1036  | 2026-01-12 | Now seeing intermittent 502s as well. Th
+ LUM-1036  | 2026-01-12 | Frankfurt p99 went from 180ms to 600ms w
+ LUM-1039  | 2026-01-14 | We need November's invoice for a tax fil
+ LUM-1039  | 2026-01-14 | Tried two browsers and a colleague's acc
+ LUM-1039  | 2026-01-14 | Every invoice link under Billing -> Hist
+(12 rows)

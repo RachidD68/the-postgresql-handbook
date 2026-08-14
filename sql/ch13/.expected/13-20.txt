@@ -1,0 +1,12 @@
+NOTICE:  archived 25 events
+NOTICE:  archived 25 events
+NOTICE:  archived 6 events
+CALL
+ still_hot | archived
+-----------+----------
+        65 |       56
+(1 row)
+
+DROP TABLE
+DROP TABLE
+DROP PROCEDURE

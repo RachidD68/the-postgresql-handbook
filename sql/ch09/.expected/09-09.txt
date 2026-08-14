@@ -1,0 +1,6 @@
+ id | full_name
+----+------------
+  7 | Zara Ahmed
+(1 row)
+
+INSERT 0 1

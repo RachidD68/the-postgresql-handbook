@@ -1,0 +1,19 @@
+A| BEGIN
+A|  hot
+A| -----
+A|    4
+A| (1 row)
+A|
+B| BEGIN
+B|  hot
+B| -----
+B|    4
+B| (1 row)
+B|
+A| UPDATE 1
+B| UPDATE 1
+A| COMMIT
+B| ERROR:  40001: could not serialize access due to read/write dependencies among transactions
+B| DETAIL:  Reason code: Canceled on identification as a pivot, during commit attempt.
+B| HINT:  The transaction might succeed if retried.
+A| UPDATE 1

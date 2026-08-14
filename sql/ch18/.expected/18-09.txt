@@ -1,0 +1,7 @@
+VACUUM
+ on_disk
+---------
+ 43 MB
+(1 row)
+
+DROP TABLE

@@ -1,0 +1,10 @@
+INSERT 0 1
+ live_january
+--------------
+           12
+(1 row)
+
+ cached_january
+----------------
+             11
+(1 row)

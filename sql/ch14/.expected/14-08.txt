@@ -1,0 +1,14 @@
+A| BEGIN
+A| UPDATE 1
+B|  priority
+B| ----------
+B|  low
+B| (1 row)
+B|
+A| COMMIT
+B|  priority
+B| ----------
+B|  high
+B| (1 row)
+B|
+A| UPDATE 1

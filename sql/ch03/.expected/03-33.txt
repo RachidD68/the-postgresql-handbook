@@ -1,0 +1,9 @@
+CREATE TABLE
+INSERT 0 3
+TRUNCATE TABLE
+ id
+----
+  1
+(1 row)
+
+INSERT 0 1

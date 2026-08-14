@@ -1,0 +1,6 @@
+             QUERY PLAN
+-------------------------------------
+ Aggregate
+   ->  Seq Scan on ticket
+         Filter: (customer_id = 507)
+(3 rows)

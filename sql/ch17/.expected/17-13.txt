@@ -1,0 +1,13 @@
+SET
+SET
+ my_tickets
+------------
+        170
+(1 row)
+
+ reference | status
+-----------+--------
+ LUM-1003  | closed
+ LUM-1015  | closed
+ LUM-10160 | closed
+(3 rows)

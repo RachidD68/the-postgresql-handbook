@@ -1,0 +1,7 @@
+NOTICE:  extension "vector" already exists, skipping
+CREATE EXTENSION
+                                    List of installed extensions
+  Name  | Version | Default version | Schema |                     Description
+--------+---------+-----------------+--------+------------------------------------------------------
+ vector | 0.8.6   | 0.8.6           | lumina | vector data type and ivfflat and hnsw access methods
+(1 row)

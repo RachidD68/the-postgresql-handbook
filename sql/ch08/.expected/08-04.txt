@@ -1,0 +1,4 @@
+ all_rows | scored_rows | distinct_customers
+----------+-------------+--------------------
+       40 |          21 |                 12
+(1 row)

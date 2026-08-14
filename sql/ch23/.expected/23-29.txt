@@ -1,0 +1,17 @@
+ id  |                     title                     | rank
+-----+-----------------------------------------------+------
+   1 | Printer jams when feeding multiple sheets     | 0.61
+  81 | Printer driver missing after a Windows update | 0.61
+  97 | Printer jams when feeding multiple sheets     | 0.61
+ 177 | Printer driver missing after a Windows update | 0.61
+ 193 | Printer jams when feeding multiple sheets     | 0.61
+(5 rows)
+
+ id  |                    title                    | distance
+-----+---------------------------------------------+----------
+  33 | Document feeder grabs several pages at once |     0.00
+  49 | Print jobs stall in the spooler queue       |     0.10
+ 145 | Print jobs stall in the spooler queue       |     0.10
+  97 | Printer jams when feeding multiple sheets   |     0.10
+ 193 | Printer jams when feeding multiple sheets   |     0.11
+(5 rows)

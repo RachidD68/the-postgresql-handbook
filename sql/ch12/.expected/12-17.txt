@@ -1,0 +1,11 @@
+ reference |                subject                 |  rank
+-----------+----------------------------------------+--------
+ LUM-1003  | Invoice shows wrong VAT number         | 0.6687
+ LUM-1011  | Enterprise invoice needs PO number     | 0.6687
+ LUM-1039  | Invoice PDF download returns 404       | 0.6687
+ LUM-1030  | December invoice missing line items    | 0.6079
+ LUM-1009  | Refund for cancelled seat not received | 0.2432
+ LUM-1025  | Charged in USD instead of EUR          | 0.2432
+ LUM-1032  | Add cost center to billing address     | 0.2432
+ LUM-1038  | Update VAT rate for 2026               | 0.2432
+(8 rows)

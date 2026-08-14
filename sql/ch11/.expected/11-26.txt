@@ -1,0 +1,7 @@
+ reference |     key     |                             value
+-----------+-------------+---------------------------------------------------------------
+ LUM-1004  | cost_center | "CC-0049"
+ LUM-1004  | device      | {"os": "iOS", "os_version": "19.2", "app_version": "4.8.1"}
+ LUM-1004  | po_number   | "PO-2026-004"
+ LUM-1033  | device      | {"os": "Android", "os_version": "17", "app_version": "4.7.0"}
+(4 rows)

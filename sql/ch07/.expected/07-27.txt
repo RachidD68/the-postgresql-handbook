@@ -1,0 +1,9 @@
+ customers_shown
+-----------------
+               7
+(1 row)
+
+ customers_shown
+-----------------
+              13
+(1 row)

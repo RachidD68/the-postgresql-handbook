@@ -1,0 +1,6 @@
+CREATE INDEX
+                              QUERY PLAN
+-----------------------------------------------------------------------
+ Index Only Scan using ticket_workload_idx on ticket
+   Index Cond: ((assigned_agent_id = 105) AND (status = 'open'::text))
+(2 rows)

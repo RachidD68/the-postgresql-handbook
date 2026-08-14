@@ -1,0 +1,6 @@
+ reference |                   why_it_matched
+-----------+-----------------------------------------------------
+ LUM-1003  | <b>invoice</b> lists the old VAT registration
+ LUM-1011  | <b>invoices</b> without our purchase order number
+ LUM-1039  | <b>invoice</b> in billing history gives a not-found
+(3 rows)

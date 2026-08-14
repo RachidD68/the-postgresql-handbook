@@ -1,0 +1,9 @@
+   full_name   | resolved | row_num | rnk | dense
+---------------+----------+---------+-----+-------
+ Amara Diallo  |        6 |       1 |   1 |     1
+ Priya Nair    |        5 |       2 |   2 |     2
+ Leo Tanaka    |        4 |       3 |   3 |     3
+ Marcus Webb   |        4 |       4 |   3 |     3
+ Sofia Ramos   |        4 |       5 |   3 |     3
+ Dmitri Volkov |        3 |       6 |   6 |     4
+(6 rows)

@@ -1,0 +1,10 @@
+VACUUM
+ pg_stat_force_next_flush
+--------------------------
+
+(1 row)
+
+ n_live_tup | n_dead_tup | on_disk
+------------+------------+---------
+     158124 |          0 | 86 MB
+(1 row)

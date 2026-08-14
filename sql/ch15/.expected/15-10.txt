@@ -1,0 +1,13 @@
+CREATE INDEX
+                           QUERY PLAN
+-----------------------------------------------------------------
+ Aggregate
+   ->  Index Only Scan using ticket_team_status_idx on ticket
+         Index Cond: ((team_id = 3) AND (status = 'open'::text))
+(3 rows)
+
+                    QUERY PLAN
+---------------------------------------------------
+ Index Scan using ticket_team_status_idx on ticket
+   Index Cond: (status = 'open'::text)
+(2 rows)

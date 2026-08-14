@@ -1,0 +1,8 @@
+CREATE INDEX
+CREATE INDEX
+ partial | full_size
+---------+-----------
+ 160 kB  | 1768 kB
+(1 row)
+
+DROP INDEX

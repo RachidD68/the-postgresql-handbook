@@ -1,0 +1,11 @@
+CREATE VIEW
+ urgent_before
+---------------
+             5
+(1 row)
+
+UPDATE 1
+ urgent_after
+--------------
+            4
+(1 row)

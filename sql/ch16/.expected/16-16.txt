@@ -1,0 +1,7 @@
+                                       QUERY PLAN
+----------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   ->  Index Only Scan using ticket_customer_idx on ticket (actual rows=100.00 loops=1)
+         Index Cond: (customer_id = 507)
+         Index Searches: 1
+(9 rows)

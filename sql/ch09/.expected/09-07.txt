@@ -1,0 +1,10 @@
+   full_name   |    company_name
+---------------+--------------------
+ Aisha Rahman  | Beacon Health
+ Diego Fuentes | Solstice Energy
+ Elena Petrova | Quartz Media
+ Fiona O'Brien | Harbor Analytics
+ Jack Chen     | Northwind Traders
+ Lucas Moreau  | Atelier Moreau
+ Tom Okafor    | Meridian Logistics
+(7 rows)

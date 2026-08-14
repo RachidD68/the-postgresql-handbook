@@ -1,0 +1,7 @@
+     rolname     | rolcanlogin
+-----------------+-------------
+ lumina_app      | f
+ lumina_readonly | f
+ postgres        | t
+ support_agent   | f
+(4 rows)

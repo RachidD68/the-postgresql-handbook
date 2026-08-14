@@ -1,0 +1,9 @@
+                  team_as_document
+-----------------------------------------------------
+ {                                                  +
+     "id": 3,                                       +
+     "name": "Onboarding",                          +
+     "created_at": "2024-06-15T09:00:00+00:00",     +
+     "focus_area": "New-customer setup and training"+
+ }
+(1 row)

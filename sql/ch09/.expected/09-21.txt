@@ -1,0 +1,6 @@
+ depth | id  |                       says
+-------+-----+--------------------------------------------------
+     1 | 106 | Frankfurt p99 went from 180ms to 600ms within an
+     2 | 107 | Now seeing intermittent 502s as well. This is af
+     3 | 108 | Second business day with no response on an urgen
+(3 rows)

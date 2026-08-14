@@ -1,0 +1,7 @@
+                                QUERY PLAN
+--------------------------------------------------------------------------
+ Limit (actual rows=20.00 loops=1)
+   ->  Index Scan using ticket_pkey on ticket (actual rows=20.00 loops=1)
+         Index Cond: (id > 60980)
+         Index Searches: 1
+(8 rows)

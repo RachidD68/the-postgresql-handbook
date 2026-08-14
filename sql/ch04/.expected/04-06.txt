@@ -1,0 +1,8 @@
+ reference |                subject                 |       created_at
+-----------+----------------------------------------+------------------------
+ LUM-1036  | Latency spike on EU endpoints          | 2026-01-12 07:51:00+00
+ LUM-1037  | Audit log missing yesterday's entries  | 2026-01-12 11:19:00+00
+ LUM-1038  | Update VAT rate for 2026               | 2026-01-13 10:28:00+00
+ LUM-1039  | Invoice PDF download returns 404       | 2026-01-14 09:03:00+00
+ LUM-1040  | Feature request: dark mode for reports | 2026-01-14 15:46:00+00
+(5 rows)

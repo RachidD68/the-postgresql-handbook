@@ -1,0 +1,22 @@
+                     QUERY PLAN
+-----------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   ->  Seq Scan on ticket (actual rows=2.00 loops=1)
+         Filter: (subject ~~ '%export%'::text)
+         Rows Removed by Filter: 80038
+(8 rows)
+
+CREATE INDEX
+                                     QUERY PLAN
+------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   ->  Bitmap Heap Scan on ticket (actual rows=2.00 loops=1)
+         Recheck Cond: (subject ~~ '%export%'::text)
+         Rows Removed by Index Recheck: 6668
+         Heap Blocks: exact=5282
+         ->  Bitmap Index Scan on ticket_subject_trgm (actual rows=6670.00 loops=1)
+               Index Cond: (subject ~~ '%export%'::text)
+               Index Searches: 1
+(13 rows)
+
+DROP INDEX

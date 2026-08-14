@@ -1,0 +1,13 @@
+       team        | tickets
+-------------------+---------
+ Billing           |      16
+ Onboarding        |       9
+ Technical Support |      30
+(3 rows)
+
+       team        | tickets
+-------------------+---------
+ Billing           |      12
+ Onboarding        |       7
+ Technical Support |      21
+(3 rows)

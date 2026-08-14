@@ -1,0 +1,6 @@
+       team        | resolved_tickets | avg_minutes | worst_minutes
+-------------------+------------------+-------------+---------------
+ Onboarding        |                6 |        1419 |          5560
+ Billing           |                7 |        2002 |          5671
+ Technical Support |               13 |        3693 |          6228
+(3 rows)

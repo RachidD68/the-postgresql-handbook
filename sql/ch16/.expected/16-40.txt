@@ -1,0 +1,24 @@
+                                            QUERY PLAN
+---------------------------------------------------------------------------------------------------
+ Index Scan using ticket_customer_idx on ticket t (actual rows=100.00 loops=1)
+   Index Cond: (customer_id = 507)
+   Index Searches: 1
+   SubPlan 1
+     ->  Aggregate (actual rows=1.00 loops=100)
+           ->  Index Only Scan using event_ticket_idx on ticket_event (actual rows=7.00 loops=100)
+                 Index Cond: (ticket_id = t.id)
+                 Index Searches: 100
+(14 rows)
+
+                                          QUERY PLAN
+----------------------------------------------------------------------------------------------
+ HashAggregate (actual rows=100.00 loops=1)
+   Group Key: t.reference
+   ->  Nested Loop Left Join (actual rows=700.00 loops=1)
+         ->  Index Scan using ticket_customer_idx on ticket t (actual rows=100.00 loops=1)
+               Index Cond: (customer_id = 507)
+               Index Searches: 1
+         ->  Index Scan using event_ticket_idx on ticket_event e (actual rows=7.00 loops=100)
+               Index Cond: (ticket_id = t.id)
+               Index Searches: 100
+(16 rows)

@@ -1,0 +1,6 @@
+ reference | could_take_it
+-----------+---------------
+ LUM-1036  | Priya Nair
+ LUM-1036  | Marcus Webb
+ LUM-1036  | Leo Tanaka
+(3 rows)

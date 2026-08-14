@@ -1,0 +1,10 @@
+ reference |                subject                 |   full_name
+-----------+----------------------------------------+---------------
+ LUM-1031  | Data export stuck at 90 percent        | Tom Okafor
+ LUM-1033  | Mobile notifications arrive twice      | Lucas Moreau
+ LUM-1034  | Slack integration stopped posting      | Elena Petrova
+ LUM-1036  | Latency spike on EU endpoints          | Jack Chen
+ LUM-1037  | Audit log missing yesterday's entries  | Aisha Rahman
+ LUM-1039  | Invoice PDF download returns 404       | Diego Fuentes
+ LUM-1040  | Feature request: dark mode for reports | Fiona O'Brien
+(7 rows)

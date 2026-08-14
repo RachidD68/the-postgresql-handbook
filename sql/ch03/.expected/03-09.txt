@@ -1,0 +1,6 @@
+       name        |                focus_area
+-------------------+-------------------------------------------
+ Billing           | Invoices, payments, refunds, plan changes
+ Onboarding        | New-customer setup and training
+ Technical Support | Product defects, APIs, integrations
+(3 rows)

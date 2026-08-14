@@ -1,0 +1,14 @@
+   full_name   | reference
+---------------+-----------
+ Diego Fuentes | LUM-1009
+ Diego Fuentes | LUM-1019
+ Diego Fuentes | LUM-1030
+ Diego Fuentes | LUM-1039
+ Nina Haugen   | LUM-1013
+ Nina Haugen   | LUM-1026
+ Nina Haugen   | LUM-1038
+ Omar Haddad   | LUM-1011
+ Omar Haddad   | LUM-1020
+ Omar Haddad   | LUM-1032
+ Wei Zhang     |
+(11 rows)

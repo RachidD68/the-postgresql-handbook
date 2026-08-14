@@ -1,0 +1,11 @@
+                                            QUERY PLAN
+--------------------------------------------------------------------------------------------------
+ HashAggregate (actual rows=792.00 loops=1)
+   Group Key: c.company_name
+   ->  Hash Join (actual rows=80040.00 loops=1)
+         Hash Cond: (t.customer_id = c.id)
+         ->  Index Only Scan using ticket_customer_idx on ticket t (actual rows=80040.00 loops=1)
+               Index Searches: 1
+         ->  Hash (actual rows=812.00 loops=1)
+               ->  Seq Scan on customer c (actual rows=812.00 loops=1)
+(18 rows)

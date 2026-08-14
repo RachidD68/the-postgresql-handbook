@@ -1,0 +1,6 @@
+ reference | has_po | has_either | has_both
+-----------+--------+------------+----------
+ LUM-1001  | t      | t          | f
+ LUM-1002  | f      | f          | f
+ LUM-1004  | t      | t          | t
+(3 rows)

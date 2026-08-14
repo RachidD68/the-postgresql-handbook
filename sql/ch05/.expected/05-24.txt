@@ -1,0 +1,4 @@
+ arrived_during_window | windows_overlap
+-----------------------+-----------------
+ t                     | t
+(1 row)

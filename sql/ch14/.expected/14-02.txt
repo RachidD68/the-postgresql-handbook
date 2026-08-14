@@ -1,0 +1,13 @@
+BEGIN
+UPDATE 1
+INSERT 0 1
+  status  | has_resolution
+----------+----------------
+ resolved | t
+(1 row)
+
+ROLLBACK
+ status | has_resolution
+--------+----------------
+ open   | f
+(1 row)

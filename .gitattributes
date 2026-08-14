@@ -1,0 +1,8 @@
+# Listing files are emitted by the book's render pipeline — collapse them in diffs.
+sql/ch*/** linguist-generated=true
+sql/ch*/.expected/** linguist-generated=true
+
+# Keep SQL and scripts LF-stable across platforms.
+*.sql text eol=lf
+*.py  text eol=lf
+*.ps1 text eol=crlf

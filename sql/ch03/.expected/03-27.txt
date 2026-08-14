@@ -1,0 +1,6 @@
+ id | name
+----+------
+ 27 | vip
+(1 row)
+
+INSERT 0 1

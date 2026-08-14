@@ -1,0 +1,9 @@
+     agent     |  hired_on
+---------------+------------
+ Amara Diallo  | 2021-11-08
+ Dmitri Volkov | 2023-02-20
+ Leo Tanaka    | 2024-05-12
+ Marcus Webb   | 2022-08-01
+ Priya Nair    | 2021-03-15
+ Sofia Ramos   | 2020-06-10
+(6 rows)

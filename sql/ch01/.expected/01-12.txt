@@ -1,0 +1,2 @@
+You are now connected to database "lumina" as user "postgres".
+Did not find any tables.

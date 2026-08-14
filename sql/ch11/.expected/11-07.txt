@@ -1,0 +1,7 @@
+ arrived_via | tickets
+-------------+---------
+ email       |      19
+ web         |      13
+ chat        |       6
+ phone       |       2
+(4 rows)

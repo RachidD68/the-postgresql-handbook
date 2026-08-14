@@ -1,0 +1,9 @@
+       team        |   full_name   |  hired_on  | founding_hire |  newest_hire
+-------------------+---------------+------------+---------------+---------------
+ Billing           | Sofia Ramos   | 2020-06-10 | Sofia Ramos   | Sofia Ramos
+ Billing           | Dmitri Volkov | 2023-02-20 | Sofia Ramos   | Dmitri Volkov
+ Onboarding        | Amara Diallo  | 2021-11-08 | Amara Diallo  | Amara Diallo
+ Technical Support | Priya Nair    | 2021-03-15 | Priya Nair    | Priya Nair
+ Technical Support | Marcus Webb   | 2022-08-01 | Priya Nair    | Marcus Webb
+ Technical Support | Leo Tanaka    | 2024-05-12 | Priya Nair    | Leo Tanaka
+(6 rows)

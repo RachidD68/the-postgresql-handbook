@@ -1,0 +1,27 @@
+                                          QUERY PLAN
+----------------------------------------------------------------------------------------------
+ Hash Join (actual rows=101.00 loops=1)
+   Hash Cond: (t.customer_id = c.id)
+   Join Filter: ((t.reference = 'LUM-50000'::text) OR (c.company_name = 'Company 042'::text))
+   Rows Removed by Join Filter: 79939
+   ->  Seq Scan on ticket t (actual rows=80040.00 loops=1)
+   ->  Hash (actual rows=812.00 loops=1)
+         ->  Seq Scan on customer c (actual rows=812.00 loops=1)
+(14 rows)
+
+                                            QUERY PLAN
+---------------------------------------------------------------------------------------------------
+ HashAggregate (actual rows=101.00 loops=1)
+   Group Key: t.reference
+   ->  Append (actual rows=101.00 loops=1)
+         ->  Index Only Scan using ticket_reference_key on ticket t (actual rows=1.00 loops=1)
+               Index Cond: (reference = 'LUM-50000'::text)
+               Index Searches: 1
+         ->  Nested Loop (actual rows=100.00 loops=1)
+               ->  Seq Scan on customer c (actual rows=1.00 loops=1)
+                     Filter: (company_name = 'Company 042'::text)
+                     Rows Removed by Filter: 811
+               ->  Index Scan using ticket_customer_idx on ticket t_1 (actual rows=100.00 loops=1)
+                     Index Cond: (customer_id = c.id)
+                     Index Searches: 1
+(23 rows)

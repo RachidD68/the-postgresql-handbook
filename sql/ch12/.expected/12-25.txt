@@ -1,0 +1,5 @@
+NOTICE:  text-search query contains only stop words or doesn't contain lexemes, ignored
+ matches
+---------
+       0
+(1 row)

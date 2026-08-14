@@ -1,0 +1,23 @@
+                            QUERY PLAN
+------------------------------------------------------------------
+ Limit
+   ->  Append
+         ->  Seq Scan on ticket_event_2025_07 ticket_event_1
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+         ->  Seq Scan on ticket_event_2025_08 ticket_event_2
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+         ->  Seq Scan on ticket_event_2025_09 ticket_event_3
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+         ->  Seq Scan on ticket_event_2025_10 ticket_event_4
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+         ->  Seq Scan on ticket_event_2025_11 ticket_event_5
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+         ->  Seq Scan on ticket_event_2025_12 ticket_event_6
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+         ->  Seq Scan on ticket_event_2026_01 ticket_event_7
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+         ->  Seq Scan on ticket_event_2026_02 ticket_event_8
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+         ->  Seq Scan on ticket_event_default ticket_event_9
+               Filter: ((occurred_at)::date = '2025-12-15'::date)
+(20 rows)

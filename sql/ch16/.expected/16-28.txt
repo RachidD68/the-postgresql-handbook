@@ -1,0 +1,34 @@
+                                        QUERY PLAN
+------------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   ->  Bitmap Heap Scan on ticket (actual rows=2000.00 loops=1)
+         Recheck Cond: ((assigned_agent_id = 104) AND (team_id = 1))
+         Heap Blocks: exact=2000
+         ->  BitmapAnd (actual rows=0.00 loops=1)
+               ->  Bitmap Index Scan on ticket_workload_idx (actual rows=2000.00 loops=1)
+                     Index Cond: (assigned_agent_id = 104)
+                     Index Searches: 1
+               ->  Bitmap Index Scan on ticket_team_idx (actual rows=24012.00 loops=1)
+                     Index Cond: (team_id = 1)
+                     Index Searches: 1
+(18 rows)
+
+CREATE STATISTICS
+ANALYZE
+                                        QUERY PLAN
+------------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   ->  Bitmap Heap Scan on ticket (actual rows=2000.00 loops=1)
+         Recheck Cond: ((assigned_agent_id = 104) AND (team_id = 1))
+         Heap Blocks: exact=2000
+         ->  BitmapAnd (actual rows=0.00 loops=1)
+               ->  Bitmap Index Scan on ticket_workload_idx (actual rows=2000.00 loops=1)
+                     Index Cond: (assigned_agent_id = 104)
+                     Index Searches: 1
+               ->  Bitmap Index Scan on ticket_team_idx (actual rows=24012.00 loops=1)
+                     Index Cond: (team_id = 1)
+                     Index Searches: 1
+(18 rows)
+
+DROP STATISTICS
+ANALYZE
