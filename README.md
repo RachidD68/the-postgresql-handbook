@@ -7,13 +7,31 @@ The Lumina Helpdesk database, every SQL listing, and the exercise solutions for
 
 ```
 docker compose up -d
-.\scripts\reset-to-chapter.ps1 -Chapter 23
+.\scripts\reset-to-chapter.ps1 -Chapter 22     # Windows
+./scripts/reset-to-chapter.sh 22               # macOS / Linux
 ```
 
-That gives you the exact database every listing in the book was verified against.
+That gives you the exact database every Chapter 1–22 listing was verified against.
+(States 20 and 22 are identical — no migration lands between them.)
 No Docker? Appendix A covers native installs; the scripts work identically —
 they connect via the standard `PGHOST` / `PGPORT` / `PGUSER` / `PGPASSWORD`
 environment variables (default `localhost:5432` as `postgres`).
+
+**Chapter 23 (pgvector) is the one exception.** It needs the pgvector-enabled
+image specifically, and if you already have a native PostgreSQL install on the
+default port, `docker compose up -d` will collide with it. Give the container
+its own port and point the scripts at it:
+
+```
+$env:POSTGRES_PORT = '5433'
+docker compose up -d
+$env:PGPORT     = '5433'
+$env:PGPASSWORD = 'lumina'
+.\scripts\reset-to-chapter.ps1 -Chapter 23    # or: ./scripts/reset-to-chapter.sh 23
+```
+
+(Or stop your native server and skip the `PGPORT` overrides if you'd rather
+keep everything on 5432 — either works, just not both servers on the same port.)
 
 ## Layout
 
@@ -24,14 +42,15 @@ environment variables (default `localhost:5432` as `postgres`).
 | `seed/` | Deterministic data: `seed-core.sql` (the 40 tickets the book narrates), `seed-bulk.sql` (80k tickets for the performance chapters) |
 | `sql/chNN/` | **Generated** — every listing printed in chapter NN, exactly as printed. Do not edit; they are emitted from the book's source |
 | `exercises/chNN/` | Exercise solutions (basic / intermediate / challenge) |
-| `scripts/` | `reset-to-chapter.ps1 -Chapter N` — rebuild the database to the state chapter N expects |
+| `scripts/` | `reset-to-chapter.ps1 -Chapter N` (Windows) or `reset-to-chapter.sh N` (macOS/Linux) — rebuild the database to the state chapter N expects. The two are equivalent ports |
 | `tools/` | The verification harness the book was built with |
 | `src/` | One small C# solution for Chapters 21–23 (Npgsql, EF Core, pgvector) |
 | `config/` | The planner settings the book's `EXPLAIN` output was captured under |
 
 ## Chapter state
 
-Chapter state is a pure function of N: `reset-to-chapter.ps1 -Chapter N` gives you
+Chapter state is a pure function of N: `reset-to-chapter.ps1 -Chapter N` (or
+`reset-to-chapter.sh N`) gives you
 the database as it stands when chapter N *opens* — the core schema (from Chapter 3
 onward), every migration from earlier chapters, and the seeds N calls for, then
 `VACUUM (ANALYZE)`. The chapter's own DDL is yours to type as you follow along.

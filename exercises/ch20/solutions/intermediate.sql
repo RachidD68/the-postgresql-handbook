@@ -18,6 +18,9 @@ SELECT count(*) AS publisher_open FROM ticket WHERE status = 'open';
 -- create_slot = false.
 SELECT pg_create_logical_replication_slot('open_sub', 'pgoutput');
 
+-- Listing 20.5 may have already created this while you followed the
+-- chapter; drop it first so the exercise runs from either starting point.
+DROP DATABASE IF EXISTS lumina_replica;
 CREATE DATABASE lumina_replica;
 
 \c lumina_replica

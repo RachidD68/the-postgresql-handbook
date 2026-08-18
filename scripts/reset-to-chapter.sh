@@ -84,17 +84,24 @@ query_scalar() {
         "$PSQL" -X -q -t -A -d "$1" -c "$2" 2>/dev/null || true
     fi
 }
-if [ "$(query_scalar postgres "SELECT 1 FROM pg_database WHERE datname = 'lumina_replica';")" = "1" ]; then
-    # lumina_sub is the chapter demo's subscription; open_sub is Exercise 20.2's.
-    for sub in lumina_sub open_sub; do
-        run_tolerant lumina_replica "ALTER SUBSCRIPTION $sub DISABLE;"
-        run_tolerant lumina_replica "ALTER SUBSCRIPTION $sub SET (slot_name = NONE);"
-        run_tolerant lumina_replica "DROP SUBSCRIPTION IF EXISTS $sub;"
+# Scan the WHOLE cluster, not just lumina_replica: a mistyped demo can leave a
+# subscription in any database (including lumina itself), and one we miss makes
+# every later DROP DATABASE fail. Name-agnostic on both counts, so a reader's
+# own experiment cleans up as reliably as the book's.
+for db in $(query_scalar postgres "SELECT DISTINCT d.datname FROM pg_subscription s JOIN pg_database d ON d.oid = s.subdbid;"); do
+    for sub in $(query_scalar "$db" "SELECT subname FROM pg_subscription;"); do
+        run_tolerant "$db" "ALTER SUBSCRIPTION $sub DISABLE;"
+        run_tolerant "$db" "ALTER SUBSCRIPTION $sub SET (slot_name = NONE);"
+        run_tolerant "$db" "DROP SUBSCRIPTION IF EXISTS $sub;"
     done
-fi
-# Logical slots must be dropped from the database they belong to (lumina, if
-# it still exists); leftover physical slots ride along in the same statement.
-run_tolerant lumina "SELECT pg_drop_replication_slot(slot_name) FROM pg_replication_slots WHERE slot_name IN ('lumina_sub', 'open_sub', 'standby_a', 'standby_slot');"
+done
+# An ACTIVE slot refuses pg_drop_replication_slot, so evict its walsender first;
+# then drop every slot that remains, whatever it is called.
+run_tolerant postgres "SELECT pg_terminate_backend(active_pid) FROM pg_replication_slots WHERE active_pid IS NOT NULL;"
+for slot in $(query_scalar postgres "SELECT slot_name FROM pg_replication_slots;"); do
+    run_tolerant postgres "SELECT pg_drop_replication_slot('$slot');"
+    run_tolerant lumina   "SELECT pg_drop_replication_slot('$slot');"
+done
 
 run postgres "DROP DATABASE IF EXISTS lumina WITH (FORCE);"
 # Ch17 roles are cluster-level and survive the drop; remove for a clean State(N).

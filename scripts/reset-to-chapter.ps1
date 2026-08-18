@@ -118,26 +118,37 @@ function Invoke-SqlTolerant {
         }
     } catch { }
 }
-$replicaExists = $false
-try {
-    $chk = if ($useDocker) {
-        docker exec -i lumina-db psql -X -q -t -A -U postgres -d postgres -c "SELECT 1 FROM pg_database WHERE datname = 'lumina_replica';"
-    } else {
-        & $psql -X -q -t -A -d postgres -c "SELECT 1 FROM pg_database WHERE datname = 'lumina_replica';"
-    }
-    if ("$chk".Trim() -eq '1') { $replicaExists = $true }
-} catch { }
-if ($replicaExists) {
-    # lumina_sub is the chapter demo's subscription; open_sub is Exercise 20.2's.
-    foreach ($sub in @('lumina_sub', 'open_sub')) {
-        Invoke-SqlTolerant -Db lumina_replica -Command "ALTER SUBSCRIPTION $sub DISABLE;"
-        Invoke-SqlTolerant -Db lumina_replica -Command "ALTER SUBSCRIPTION $sub SET (slot_name = NONE);"
-        Invoke-SqlTolerant -Db lumina_replica -Command "DROP SUBSCRIPTION IF EXISTS $sub;"
+function Get-SqlScalarList {
+    param([string]$Db, [string]$Command)
+    try {
+        $out = if ($useDocker) {
+            docker exec -i lumina-db psql -X -q -t -A -U postgres -d $Db -c $Command 2>$null
+        } else {
+            & $psql -X -q -t -A -d $Db -c $Command 2>$null
+        }
+        return @("$out" -split "`n" | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+    } catch { return @() }
+}
+
+# Scan the WHOLE cluster, not just lumina_replica: a mistyped demo can leave a
+# subscription in any database (including lumina itself), and one we miss makes
+# every later DROP DATABASE fail. Name-agnostic on both counts, so a reader's
+# own experiment cleans up as reliably as the book's.
+$subDbs = Get-SqlScalarList -Db postgres -Command "SELECT DISTINCT d.datname FROM pg_subscription s JOIN pg_database d ON d.oid = s.subdbid;"
+foreach ($db in $subDbs) {
+    foreach ($sub in (Get-SqlScalarList -Db $db -Command "SELECT subname FROM pg_subscription;")) {
+        Invoke-SqlTolerant -Db $db -Command "ALTER SUBSCRIPTION $sub DISABLE;"
+        Invoke-SqlTolerant -Db $db -Command "ALTER SUBSCRIPTION $sub SET (slot_name = NONE);"
+        Invoke-SqlTolerant -Db $db -Command "DROP SUBSCRIPTION IF EXISTS $sub;"
     }
 }
-# Logical slots must be dropped from the database they belong to (lumina, if
-# it still exists); leftover physical slots ride along in the same statement.
-Invoke-SqlTolerant -Db lumina -Command "SELECT pg_drop_replication_slot(slot_name) FROM pg_replication_slots WHERE slot_name IN ('lumina_sub', 'open_sub', 'standby_a', 'standby_slot');"
+# An ACTIVE slot refuses pg_drop_replication_slot, so evict its walsender first;
+# then drop every slot that remains, whatever it is called.
+Invoke-SqlTolerant -Db postgres -Command "SELECT pg_terminate_backend(active_pid) FROM pg_replication_slots WHERE active_pid IS NOT NULL;"
+foreach ($slot in (Get-SqlScalarList -Db postgres -Command "SELECT slot_name FROM pg_replication_slots;")) {
+    Invoke-SqlTolerant -Db postgres -Command "SELECT pg_drop_replication_slot('$slot');"
+    Invoke-SqlTolerant -Db lumina   -Command "SELECT pg_drop_replication_slot('$slot');"
+}
 
 # -- Drop and recreate (this script only ever drops 'lumina') ----------
 Invoke-Sql -Db postgres -Command "DROP DATABASE IF EXISTS lumina WITH (FORCE);"

@@ -1,8 +1,15 @@
 # Listing files are emitted by the book's render pipeline — collapse them in diffs.
 sql/ch*/** linguist-generated=true
-sql/ch*/.expected/** linguist-generated=true
 
-# Keep SQL and scripts LF-stable across platforms.
-*.sql text eol=lf
-*.py  text eol=lf
-*.ps1 text eol=crlf
+# Text normalization. Without these, .csproj/.slnx/.cs/.md churn LF<->CRLF on
+# every clone and show as spurious modifications (caught in external review).
+*.sql     text eol=lf
+*.py      text eol=lf
+*.md      text eol=lf
+*.cs      text eol=lf
+*.csproj  text eol=lf
+*.slnx    text eol=lf
+*.yml     text eol=lf
+*.conf    text eol=lf
+*.ps1     text eol=crlf
+*.sh      text eol=lf
