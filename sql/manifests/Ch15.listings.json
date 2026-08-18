@@ -1,0 +1,218 @@
+[
+  {
+    "id": "15-01",
+    "kind": "sql",
+    "slug": "life-without-an-index",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 3
+  },
+  {
+    "id": "15-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 15,
+    "lines": 6
+  },
+  {
+    "id": "15-03",
+    "kind": "sql",
+    "slug": "seq-scan-sighting",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 2
+  },
+  {
+    "id": "15-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 6
+  },
+  {
+    "id": "15-05",
+    "kind": "sql",
+    "slug": "first-index",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 4
+  },
+  {
+    "id": "15-06",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 7
+  },
+  {
+    "id": "15-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 15,
+    "lines": 6
+  },
+  {
+    "id": "15-08",
+    "kind": "sql",
+    "slug": "fk-battery",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 4
+  },
+  {
+    "id": "15-09",
+    "kind": "sql",
+    "slug": "leftmost-prefix",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 7
+  },
+  {
+    "id": "15-10",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 13
+  },
+  {
+    "id": "15-11",
+    "kind": "sql",
+    "slug": "covering-include",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 8
+  },
+  {
+    "id": "15-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 6
+  },
+  {
+    "id": "15-13",
+    "kind": "sql",
+    "slug": "partial-index",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 10
+  },
+  {
+    "id": "15-14",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 8
+  },
+  {
+    "id": "15-15",
+    "kind": "sql",
+    "slug": "expression-index",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 7
+  },
+  {
+    "id": "15-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 16
+  },
+  {
+    "id": "15-17",
+    "kind": "sql",
+    "slug": "gin-promises-due",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 11
+  },
+  {
+    "id": "15-18",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 23
+  },
+  {
+    "id": "15-19",
+    "kind": "sql",
+    "slug": "brin-vs-btree",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 8
+  },
+  {
+    "id": "15-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 8
+  },
+  {
+    "id": "15-21",
+    "kind": "sql",
+    "slug": "write-amplification",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 17
+  },
+  {
+    "id": "15-22",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 15,
+    "lines": 5
+  },
+  {
+    "id": "15-23",
+    "kind": "sql",
+    "slug": "idx-scan-hunt",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 4
+  },
+  {
+    "id": "15-24",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 13
+  },
+  {
+    "id": "15-25",
+    "kind": "sql",
+    "slug": "redundancy-found",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 6
+  },
+  {
+    "id": "15-26",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 15,
+    "lines": 5
+  },
+  {
+    "id": "15-27",
+    "kind": "sql",
+    "slug": "drop-concurrently",
+    "run": "exec",
+    "chapterState": 15,
+    "lines": 1
+  }
+]

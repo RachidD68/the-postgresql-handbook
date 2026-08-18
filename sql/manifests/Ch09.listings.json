@@ -1,0 +1,234 @@
+[
+  {
+    "id": "09-01",
+    "kind": "sql",
+    "slug": "scalar-in-where",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 5
+  },
+  {
+    "id": "09-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 14
+  },
+  {
+    "id": "09-03",
+    "kind": "sql",
+    "slug": "scalar-in-select",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 8
+  },
+  {
+    "id": "09-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 8
+  },
+  {
+    "id": "09-05",
+    "kind": "sql",
+    "slug": "in-with-subquery",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 4
+  },
+  {
+    "id": "09-06",
+    "kind": "sql",
+    "slug": "exists-correlated",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 6
+  },
+  {
+    "id": "09-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 10
+  },
+  {
+    "id": "09-08",
+    "kind": "sql",
+    "slug": "welcome-zara",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 3
+  },
+  {
+    "id": "09-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 6
+  },
+  {
+    "id": "09-10",
+    "kind": "sql",
+    "slug": "not-in-betrayal",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 3
+  },
+  {
+    "id": "09-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 3
+  },
+  {
+    "id": "09-12",
+    "kind": "sql",
+    "slug": "not-exists-reflex",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 5
+  },
+  {
+    "id": "09-13",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 4
+  },
+  {
+    "id": "09-14",
+    "kind": "sql",
+    "slug": "derived-table",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 7
+  },
+  {
+    "id": "09-15",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 7
+  },
+  {
+    "id": "09-16",
+    "kind": "sql",
+    "slug": "generate-series",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 4
+  },
+  {
+    "id": "09-17",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 7
+  },
+  {
+    "id": "09-18",
+    "kind": "sql",
+    "slug": "cte-chain",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 14
+  },
+  {
+    "id": "09-19",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 4
+  },
+  {
+    "id": "09-20",
+    "kind": "sql",
+    "slug": "recursive-thread",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 12
+  },
+  {
+    "id": "09-21",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 6
+  },
+  {
+    "id": "09-22",
+    "kind": "sql",
+    "slug": "recursive-org-chart",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 12
+  },
+  {
+    "id": "09-23",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 10
+  },
+  {
+    "id": "09-24",
+    "kind": "sql",
+    "slug": "cycle-guard",
+    "run": "fragment",
+    "chapterState": 9,
+    "lines": 11
+  },
+  {
+    "id": "09-25",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 7
+  },
+  {
+    "id": "09-26",
+    "kind": "sql",
+    "slug": "lateral-top-three",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 11
+  },
+  {
+    "id": "09-27",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 15
+  },
+  {
+    "id": "09-28",
+    "kind": "sql",
+    "slug": "left-join-lateral",
+    "run": "exec",
+    "chapterState": 9,
+    "lines": 10
+  },
+  {
+    "id": "09-29",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 9,
+    "lines": 10
+  }
+]

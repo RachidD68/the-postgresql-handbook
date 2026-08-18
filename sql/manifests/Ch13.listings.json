@@ -1,0 +1,211 @@
+[
+  {
+    "id": "13-01",
+    "kind": "sql",
+    "slug": "create-view",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 9
+  },
+  {
+    "id": "13-02",
+    "kind": "sql",
+    "slug": "query-the-view",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 4
+  },
+  {
+    "id": "13-03",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 7
+  },
+  {
+    "id": "13-04",
+    "kind": "sql",
+    "slug": "workload-view",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 12
+  },
+  {
+    "id": "13-05",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 10
+  },
+  {
+    "id": "13-06",
+    "kind": "sql",
+    "slug": "updatable-escape",
+    "run": "fragment",
+    "chapterState": 13,
+    "lines": 10
+  },
+  {
+    "id": "13-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 11
+  },
+  {
+    "id": "13-08",
+    "kind": "sql",
+    "slug": "create-matview",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 12
+  },
+  {
+    "id": "13-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 7
+  },
+  {
+    "id": "13-10",
+    "kind": "sql",
+    "slug": "staleness-demo",
+    "run": "fragment",
+    "chapterState": 13,
+    "lines": 12
+  },
+  {
+    "id": "13-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 10
+  },
+  {
+    "id": "13-12",
+    "kind": "sql",
+    "slug": "refresh-concurrently",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 4
+  },
+  {
+    "id": "13-13",
+    "kind": "sql",
+    "slug": "sql-function",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 8
+  },
+  {
+    "id": "13-14",
+    "kind": "sql",
+    "slug": "plpgsql-function",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 21
+  },
+  {
+    "id": "13-15",
+    "kind": "sql",
+    "slug": "calling-both",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 6
+  },
+  {
+    "id": "13-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 6
+  },
+  {
+    "id": "13-17",
+    "kind": "sql",
+    "slug": "function-syntax-error",
+    "run": "skip",
+    "expectError": "42601",
+    "chapterState": 13,
+    "lines": 8
+  },
+  {
+    "id": "13-18",
+    "kind": "sql",
+    "slug": "archive-procedure",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 27
+  },
+  {
+    "id": "13-19",
+    "kind": "sql",
+    "slug": "call-and-cleanup",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 8
+  },
+  {
+    "id": "13-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 12
+  },
+  {
+    "id": "13-21",
+    "kind": "sql",
+    "slug": "touch-trigger",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 17
+  },
+  {
+    "id": "13-22",
+    "kind": "sql",
+    "slug": "touch-proof",
+    "run": "fragment",
+    "chapterState": 13,
+    "lines": 8
+  },
+  {
+    "id": "13-23",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 6
+  },
+  {
+    "id": "13-24",
+    "kind": "sql",
+    "slug": "audit-trigger",
+    "run": "exec",
+    "chapterState": 13,
+    "lines": 18
+  },
+  {
+    "id": "13-25",
+    "kind": "sql",
+    "slug": "audit-proof",
+    "run": "fragment",
+    "chapterState": 13,
+    "lines": 8
+  },
+  {
+    "id": "13-26",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 13,
+    "lines": 5
+  }
+]

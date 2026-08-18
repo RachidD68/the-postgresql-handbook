@@ -1,0 +1,106 @@
+[
+  {
+    "id": "22-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 9
+  },
+  {
+    "id": "22-05",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 6
+  },
+  {
+    "id": "22-06",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 9
+  },
+  {
+    "id": "22-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 4
+  },
+  {
+    "id": "22-08",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 11
+  },
+  {
+    "id": "22-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 23
+  },
+  {
+    "id": "22-10",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 3
+  },
+  {
+    "id": "22-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 8
+  },
+  {
+    "id": "22-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 8
+  },
+  {
+    "id": "22-13",
+    "kind": "sql",
+    "slug": "saved-reply-by-hand",
+    "run": "fragment",
+    "chapterState": 22,
+    "lines": 7
+  },
+  {
+    "id": "22-14",
+    "kind": "sql",
+    "slug": "agent-leaderboard",
+    "run": "exec",
+    "chapterState": 22,
+    "lines": 9
+  },
+  {
+    "id": "22-15",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 22,
+    "lines": 8
+  },
+  {
+    "id": "22-19",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 22,
+    "lines": 9
+  }
+]

@@ -1,0 +1,268 @@
+[
+  {
+    "id": "03-01",
+    "kind": "sql",
+    "slug": "first-insert",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 2
+  },
+  {
+    "id": "03-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 1
+  },
+  {
+    "id": "03-03",
+    "kind": "sql",
+    "slug": "multi-row-insert",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 5
+  },
+  {
+    "id": "03-04",
+    "kind": "sql",
+    "slug": "column-count-mismatch",
+    "run": "skip",
+    "expectError": "42601",
+    "chapterState": 3,
+    "lines": 3
+  },
+  {
+    "id": "03-05",
+    "kind": "sql",
+    "slug": "atomicity-on-failure",
+    "run": "skip",
+    "expectError": "23502",
+    "chapterState": 3,
+    "lines": 5
+  },
+  {
+    "id": "03-06",
+    "kind": "sql",
+    "slug": "insert-with-default",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 6
+  },
+  {
+    "id": "03-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 5
+  },
+  {
+    "id": "03-08",
+    "kind": "sql",
+    "slug": "meet-the-teams",
+    "run": "exec",
+    "chapterState": 3,
+    "lines": 1
+  },
+  {
+    "id": "03-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 6
+  },
+  {
+    "id": "03-10",
+    "kind": "sql",
+    "slug": "obrien-escape",
+    "run": "exec",
+    "chapterState": 3,
+    "lines": 3
+  },
+  {
+    "id": "03-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 4
+  },
+  {
+    "id": "03-12",
+    "kind": "sql",
+    "slug": "projection-and-alias",
+    "run": "exec",
+    "chapterState": 3,
+    "lines": 2
+  },
+  {
+    "id": "03-13",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 9
+  },
+  {
+    "id": "03-14",
+    "kind": "sql",
+    "slug": "computed-projection",
+    "run": "exec",
+    "chapterState": 3,
+    "lines": 2
+  },
+  {
+    "id": "03-15",
+    "kind": "sql",
+    "slug": "ticket-36-blanks",
+    "run": "exec",
+    "chapterState": 3,
+    "lines": 3
+  },
+  {
+    "id": "03-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 4
+  },
+  {
+    "id": "03-17",
+    "kind": "sql",
+    "slug": "update-one-row",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 5
+  },
+  {
+    "id": "03-18",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 5
+  },
+  {
+    "id": "03-19",
+    "kind": "sql",
+    "slug": "multi-column-update",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 8
+  },
+  {
+    "id": "03-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 5
+  },
+  {
+    "id": "03-21",
+    "kind": "sql",
+    "slug": "the-unfiltered-update",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 3
+  },
+  {
+    "id": "03-22",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 1
+  },
+  {
+    "id": "03-23",
+    "kind": "sql",
+    "slug": "delete-with-where",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 2
+  },
+  {
+    "id": "03-24",
+    "kind": "sql",
+    "slug": "orphaned-comments",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 6
+  },
+  {
+    "id": "03-25",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 5
+  },
+  {
+    "id": "03-26",
+    "kind": "sql",
+    "slug": "insert-returning",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 3
+  },
+  {
+    "id": "03-27",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 6
+  },
+  {
+    "id": "03-28",
+    "kind": "sql",
+    "slug": "update-returning",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 5
+  },
+  {
+    "id": "03-29",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 6
+  },
+  {
+    "id": "03-30",
+    "kind": "sql",
+    "slug": "delete-returning",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 3
+  },
+  {
+    "id": "03-31",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 6
+  },
+  {
+    "id": "03-32",
+    "kind": "sql",
+    "slug": "truncate-vs-delete",
+    "run": "fragment",
+    "chapterState": 3,
+    "lines": 13
+  },
+  {
+    "id": "03-33",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 3,
+    "lines": 9
+  }
+]

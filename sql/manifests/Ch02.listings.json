@@ -1,0 +1,139 @@
+[
+  {
+    "id": "02-01",
+    "kind": "sql",
+    "slug": "the-spreadsheet-smell",
+    "run": "fragment",
+    "chapterState": 2,
+    "lines": 18
+  },
+  {
+    "id": "02-02",
+    "kind": "sql",
+    "slug": "create-database",
+    "run": "none",
+    "chapterState": 2,
+    "lines": 1
+  },
+  {
+    "id": "02-03",
+    "kind": "sql",
+    "slug": "create-schema",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 1
+  },
+  {
+    "id": "02-04",
+    "kind": "sql",
+    "slug": "search-path",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 3
+  },
+  {
+    "id": "02-05",
+    "kind": "sql",
+    "slug": "quoted-identifier-trap",
+    "run": "skip",
+    "expectError": "42P01",
+    "chapterState": 2,
+    "lines": 11
+  },
+  {
+    "id": "02-06",
+    "kind": "sql",
+    "slug": "drop-needs-quotes-too",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 1
+  },
+  {
+    "id": "02-07",
+    "kind": "sql",
+    "slug": "team-and-agent",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 15
+  },
+  {
+    "id": "02-08",
+    "kind": "sql",
+    "slug": "customer",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 8
+  },
+  {
+    "id": "02-09",
+    "kind": "sql",
+    "slug": "ticket",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 17
+  },
+  {
+    "id": "02-10",
+    "kind": "sql",
+    "slug": "ticket-comment",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 9
+  },
+  {
+    "id": "02-11",
+    "kind": "sql",
+    "slug": "ticket-event",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 7
+  },
+  {
+    "id": "02-12",
+    "kind": "sql",
+    "slug": "tag-and-ticket-tag",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 11
+  },
+  {
+    "id": "02-13",
+    "kind": "sql",
+    "slug": "attachment-and-sla",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 17
+  },
+  {
+    "id": "02-14",
+    "kind": "sql",
+    "slug": "dt-roll-call",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 1
+  },
+  {
+    "id": "02-15",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 2,
+    "lines": 14
+  },
+  {
+    "id": "02-16",
+    "kind": "sql",
+    "slug": "describe-ticket",
+    "run": "exec",
+    "chapterState": 2,
+    "lines": 1
+  },
+  {
+    "id": "02-17",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 2,
+    "lines": 21
+  }
+]

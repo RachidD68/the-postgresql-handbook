@@ -1,0 +1,362 @@
+[
+  {
+    "id": "16-01",
+    "kind": "sql",
+    "slug": "anatomy-with-costs",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 1
+  },
+  {
+    "id": "16-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-03",
+    "kind": "sql",
+    "slug": "costs-off-format",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 2
+  },
+  {
+    "id": "16-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-05",
+    "kind": "sql",
+    "slug": "cte-folded",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 5
+  },
+  {
+    "id": "16-06",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-07",
+    "kind": "sql",
+    "slug": "analyze-actuals",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 4
+  },
+  {
+    "id": "16-08",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-09",
+    "kind": "sql",
+    "slug": "analyze-write-rollback",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 7
+  },
+  {
+    "id": "16-10",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 14
+  },
+  {
+    "id": "16-11",
+    "kind": "sql",
+    "slug": "seq-scan-is-right",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 2
+  },
+  {
+    "id": "16-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-13",
+    "kind": "sql",
+    "slug": "index-scan",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 2
+  },
+  {
+    "id": "16-14",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-15",
+    "kind": "sql",
+    "slug": "index-only-scan",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 2
+  },
+  {
+    "id": "16-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 7
+  },
+  {
+    "id": "16-17",
+    "kind": "sql",
+    "slug": "bitmap-or",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 3
+  },
+  {
+    "id": "16-18",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 13
+  },
+  {
+    "id": "16-19",
+    "kind": "sql",
+    "slug": "nested-loop",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 5
+  },
+  {
+    "id": "16-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 10
+  },
+  {
+    "id": "16-21",
+    "kind": "sql",
+    "slug": "hash-join",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 5
+  },
+  {
+    "id": "16-22",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 11
+  },
+  {
+    "id": "16-23",
+    "kind": "sql",
+    "slug": "merge-join",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-24",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 10
+  },
+  {
+    "id": "16-25",
+    "kind": "sql",
+    "slug": "stale-stats",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 14
+  },
+  {
+    "id": "16-26",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 16,
+    "lines": 22
+  },
+  {
+    "id": "16-27",
+    "kind": "sql",
+    "slug": "create-statistics",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 12
+  },
+  {
+    "id": "16-28",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 34
+  },
+  {
+    "id": "16-29",
+    "kind": "sql",
+    "slug": "slow-1-like-trigram",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 10
+  },
+  {
+    "id": "16-30",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 22
+  },
+  {
+    "id": "16-31",
+    "kind": "sql",
+    "slug": "offset-deep-page",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 4
+  },
+  {
+    "id": "16-32",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-33",
+    "kind": "sql",
+    "slug": "keyset-flagship",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 5
+  },
+  {
+    "id": "16-34",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 7
+  },
+  {
+    "id": "16-35",
+    "kind": "sql",
+    "slug": "slow-2-function-wrap",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 5
+  },
+  {
+    "id": "16-36",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 15
+  },
+  {
+    "id": "16-37",
+    "kind": "sql",
+    "slug": "slow-3-or-union",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 14
+  },
+  {
+    "id": "16-38",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 27
+  },
+  {
+    "id": "16-39",
+    "kind": "sql",
+    "slug": "slow-4-correlated",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 12
+  },
+  {
+    "id": "16-40",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 24
+  },
+  {
+    "id": "16-41",
+    "kind": "sql",
+    "slug": "shootout-correlated",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-42",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 14
+  },
+  {
+    "id": "16-43",
+    "kind": "sql",
+    "slug": "shootout-window",
+    "run": "exec",
+    "chapterState": 16,
+    "lines": 6
+  },
+  {
+    "id": "16-44",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 16,
+    "lines": 14
+  },
+  {
+    "id": "16-45",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 16,
+    "lines": 3
+  }
+]

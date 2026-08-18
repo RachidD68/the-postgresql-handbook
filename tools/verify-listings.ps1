@@ -3,7 +3,7 @@
     Execute every SQL listing of a chapter against a fresh chapter-state database.
 
 .DESCRIPTION
-    Reads Book/chapters/ChNN/ChNN.listings.json (the manifest render.js emits),
+    Reads sql/manifests/ChNN.listings.json (the manifest render.js emits),
     resets the database to State(N), then runs each generated listing file:
 
       run = exec      self-contained; must succeed
@@ -31,11 +31,17 @@ $nn = '{0:D2}' -f $Chapter
 
 $repo = Split-Path $PSScriptRoot -Parent
 $projectRoot = Split-Path $repo -Parent
-$manifestPath = Join-Path $projectRoot "Book\chapters\Ch$nn\Ch$nn.listings.json"
+# Prefer the manifest shipped inside this repository, so a reader who cloned
+# only the companion code can run the harness. Fall back to the authoring
+# tree's copy when this script runs from the book's own working directory.
+$manifestPath = Join-Path $repo "sql\manifests\Ch$nn.listings.json"
+if (-not (Test-Path $manifestPath)) {
+    $manifestPath = Join-Path $projectRoot "Book\chapters\Ch$nn\Ch$nn.listings.json"
+}
 $sqlDir = Join-Path $repo "sql\ch$nn"
 
 if (-not (Test-Path $manifestPath)) {
-    throw "No manifest at $manifestPath — run 'node render.js' in Book\chapters\Ch$nn first."
+    throw "No manifest for chapter $nn (looked in sql\manifests and the authoring tree)."
 }
 $manifest = Get-Content $manifestPath -Raw | ConvertFrom-Json
 $sqlEntries = @($manifest | Where-Object { $_.kind -eq 'sql' })

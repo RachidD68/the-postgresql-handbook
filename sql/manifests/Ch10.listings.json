@@ -1,0 +1,226 @@
+[
+  {
+    "id": "10-01",
+    "kind": "sql",
+    "slug": "the-workaround",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 11
+  },
+  {
+    "id": "10-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 9
+  },
+  {
+    "id": "10-03",
+    "kind": "sql",
+    "slug": "the-reveal",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 8
+  },
+  {
+    "id": "10-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 9
+  },
+  {
+    "id": "10-05",
+    "kind": "sql",
+    "slug": "rank-family",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 10
+  },
+  {
+    "id": "10-06",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 9
+  },
+  {
+    "id": "10-07",
+    "kind": "sql",
+    "slug": "lag-monthly-delta",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 11
+  },
+  {
+    "id": "10-08",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 6
+  },
+  {
+    "id": "10-09",
+    "kind": "sql",
+    "slug": "last-value-surprise",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 8
+  },
+  {
+    "id": "10-10",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 9
+  },
+  {
+    "id": "10-11",
+    "kind": "sql",
+    "slug": "frame-fixed",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 8
+  },
+  {
+    "id": "10-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 9
+  },
+  {
+    "id": "10-13",
+    "kind": "sql",
+    "slug": "running-and-moving",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 15
+  },
+  {
+    "id": "10-14",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 14
+  },
+  {
+    "id": "10-15",
+    "kind": "sql",
+    "slug": "ntile-quartiles",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 13
+  },
+  {
+    "id": "10-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 7
+  },
+  {
+    "id": "10-17",
+    "kind": "sql",
+    "slug": "window-clause",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 11
+  },
+  {
+    "id": "10-18",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 9
+  },
+  {
+    "id": "10-19",
+    "kind": "sql",
+    "slug": "union-populations",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 4
+  },
+  {
+    "id": "10-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 12
+  },
+  {
+    "id": "10-21",
+    "kind": "sql",
+    "slug": "intersect-except",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 9
+  },
+  {
+    "id": "10-22",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 14
+  },
+  {
+    "id": "10-23",
+    "kind": "sql",
+    "slug": "capstone-correlated",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 13
+  },
+  {
+    "id": "10-24",
+    "kind": "sql",
+    "slug": "capstone-groupby",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 14
+  },
+  {
+    "id": "10-25",
+    "kind": "sql",
+    "slug": "capstone-windows",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 11
+  },
+  {
+    "id": "10-26",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 9
+  },
+  {
+    "id": "10-27",
+    "kind": "sql",
+    "slug": "capstone-trend",
+    "run": "exec",
+    "chapterState": 10,
+    "lines": 13
+  },
+  {
+    "id": "10-28",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 10,
+    "lines": 6
+  }
+]

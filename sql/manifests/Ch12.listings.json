@@ -1,0 +1,202 @@
+[
+  {
+    "id": "12-01",
+    "kind": "sql",
+    "slug": "like-failure-gallery",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 7
+  },
+  {
+    "id": "12-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 9
+  },
+  {
+    "id": "12-03",
+    "kind": "sql",
+    "slug": "show-trgm",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 3
+  },
+  {
+    "id": "12-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 4
+  },
+  {
+    "id": "12-05",
+    "kind": "sql",
+    "slug": "typo-lookup",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 5
+  },
+  {
+    "id": "12-06",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 4
+  },
+  {
+    "id": "12-07",
+    "kind": "sql",
+    "slug": "tsvector-anatomy",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 2
+  },
+  {
+    "id": "12-08",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 4
+  },
+  {
+    "id": "12-09",
+    "kind": "sql",
+    "slug": "config-is-a-choice",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 2
+  },
+  {
+    "id": "12-10",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 4
+  },
+  {
+    "id": "12-11",
+    "kind": "sql",
+    "slug": "websearch-tour",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 4
+  },
+  {
+    "id": "12-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 4
+  },
+  {
+    "id": "12-13",
+    "kind": "sql",
+    "slug": "first-search",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 5
+  },
+  {
+    "id": "12-14",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 4
+  },
+  {
+    "id": "12-15",
+    "kind": "sql",
+    "slug": "the-search-column",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 8
+  },
+  {
+    "id": "12-16",
+    "kind": "sql",
+    "slug": "weighted-rank",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 7
+  },
+  {
+    "id": "12-17",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 11
+  },
+  {
+    "id": "12-18",
+    "kind": "sql",
+    "slug": "rank-cd-proximity",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 10
+  },
+  {
+    "id": "12-19",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 5
+  },
+  {
+    "id": "12-20",
+    "kind": "sql",
+    "slug": "ts-headline",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 9
+  },
+  {
+    "id": "12-21",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 6
+  },
+  {
+    "id": "12-22",
+    "kind": "sql",
+    "slug": "the-search-box",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 8
+  },
+  {
+    "id": "12-23",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 7
+  },
+  {
+    "id": "12-24",
+    "kind": "sql",
+    "slug": "stop-word-surprise",
+    "run": "exec",
+    "chapterState": 12,
+    "lines": 3
+  },
+  {
+    "id": "12-25",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 12,
+    "lines": 5
+  }
+]

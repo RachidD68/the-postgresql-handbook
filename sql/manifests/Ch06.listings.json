@@ -1,0 +1,226 @@
+[
+  {
+    "id": "06-01",
+    "kind": "sql",
+    "slug": "set-not-null-fails",
+    "run": "skip",
+    "expectError": "23502",
+    "chapterState": 6,
+    "lines": 2
+  },
+  {
+    "id": "06-02",
+    "kind": "sql",
+    "slug": "plant-the-orphan",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 9
+  },
+  {
+    "id": "06-03",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 6,
+    "lines": 3
+  },
+  {
+    "id": "06-04",
+    "kind": "sql",
+    "slug": "find-the-orphan",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 3
+  },
+  {
+    "id": "06-05",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 6,
+    "lines": 4
+  },
+  {
+    "id": "06-06",
+    "kind": "sql",
+    "slug": "fk-blocked-by-orphan",
+    "run": "skip",
+    "expectError": "23503",
+    "chapterState": 6,
+    "lines": 3
+  },
+  {
+    "id": "06-07",
+    "kind": "sql",
+    "slug": "clean-then-constrain",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 8
+  },
+  {
+    "id": "06-08",
+    "kind": "sql",
+    "slug": "the-fk-battery",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 29
+  },
+  {
+    "id": "06-09",
+    "kind": "sql",
+    "slug": "restrict-in-action",
+    "run": "skip",
+    "expectError": "23001",
+    "chapterState": 6,
+    "lines": 1
+  },
+  {
+    "id": "06-10",
+    "kind": "sql",
+    "slug": "cascade-in-action",
+    "run": "fragment",
+    "chapterState": 6,
+    "lines": 11
+  },
+  {
+    "id": "06-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 6,
+    "lines": 7
+  },
+  {
+    "id": "06-12",
+    "kind": "sql",
+    "slug": "set-null-in-action",
+    "run": "fragment",
+    "chapterState": 6,
+    "lines": 5
+  },
+  {
+    "id": "06-13",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 6,
+    "lines": 5
+  },
+  {
+    "id": "06-14",
+    "kind": "sql",
+    "slug": "unique-violation",
+    "run": "skip",
+    "expectError": "23505",
+    "chapterState": 6,
+    "lines": 2
+  },
+  {
+    "id": "06-15",
+    "kind": "sql",
+    "slug": "partial-unique-guard",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 3
+  },
+  {
+    "id": "06-16",
+    "kind": "sql",
+    "slug": "duplicate-open-blocked",
+    "run": "skip",
+    "expectError": "23505",
+    "chapterState": 6,
+    "lines": 5
+  },
+  {
+    "id": "06-17",
+    "kind": "sql",
+    "slug": "the-check-battery",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 11
+  },
+  {
+    "id": "06-18",
+    "kind": "sql",
+    "slug": "check-satisfaction-violation",
+    "run": "skip",
+    "expectError": "23514",
+    "chapterState": 6,
+    "lines": 1
+  },
+  {
+    "id": "06-19",
+    "kind": "sql",
+    "slug": "check-status-violation",
+    "run": "skip",
+    "expectError": "23514",
+    "chapterState": 6,
+    "lines": 1
+  },
+  {
+    "id": "06-20",
+    "kind": "sql",
+    "slug": "not-valid-then-validate",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 6
+  },
+  {
+    "id": "06-21",
+    "kind": "sql",
+    "slug": "the-armor-on-display",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 5
+  },
+  {
+    "id": "06-22",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 6,
+    "lines": 12
+  },
+  {
+    "id": "06-23",
+    "kind": "sql",
+    "slug": "generated-column",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 5
+  },
+  {
+    "id": "06-24",
+    "kind": "sql",
+    "slug": "query-generated",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 5
+  },
+  {
+    "id": "06-25",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 6,
+    "lines": 8
+  },
+  {
+    "id": "06-26",
+    "kind": "sql",
+    "slug": "generated-write-refused",
+    "run": "skip",
+    "expectError": "428C9",
+    "chapterState": 6,
+    "lines": 1
+  },
+  {
+    "id": "06-27",
+    "kind": "sql",
+    "slug": "deferrable-swap",
+    "run": "exec",
+    "chapterState": 6,
+    "lines": 14
+  }
+]

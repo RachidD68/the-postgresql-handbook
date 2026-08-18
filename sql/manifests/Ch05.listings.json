@@ -1,0 +1,197 @@
+[
+  {
+    "id": "05-01",
+    "kind": "sql",
+    "slug": "float-surprise",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 2
+  },
+  {
+    "id": "05-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 5,
+    "lines": 4
+  },
+  {
+    "id": "05-03",
+    "kind": "sql",
+    "slug": "integer-overflow",
+    "run": "skip",
+    "expectError": "22003",
+    "chapterState": 5,
+    "lines": 1
+  },
+  {
+    "id": "05-04",
+    "kind": "sql",
+    "slug": "money-trap",
+    "run": "fragment",
+    "chapterState": 5,
+    "lines": 3
+  },
+  {
+    "id": "05-05",
+    "kind": "sql",
+    "slug": "varchar-guess",
+    "run": "skip",
+    "expectError": "22001",
+    "chapterState": 5,
+    "lines": 4
+  },
+  {
+    "id": "05-06",
+    "kind": "sql",
+    "slug": "citext-in-action",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 3
+  },
+  {
+    "id": "05-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 5,
+    "lines": 4
+  },
+  {
+    "id": "05-08",
+    "kind": "sql",
+    "slug": "one-instant-two-clocks",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 5
+  },
+  {
+    "id": "05-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 5,
+    "lines": 11
+  },
+  {
+    "id": "05-10",
+    "kind": "sql",
+    "slug": "boolean-meets-null",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 2
+  },
+  {
+    "id": "05-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 5,
+    "lines": 4
+  },
+  {
+    "id": "05-12",
+    "kind": "sql",
+    "slug": "uuid-mint",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 2
+  },
+  {
+    "id": "05-13",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 5,
+    "lines": 4
+  },
+  {
+    "id": "05-14",
+    "kind": "sql",
+    "slug": "create-enum",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 1
+  },
+  {
+    "id": "05-15",
+    "kind": "sql",
+    "slug": "alter-using",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 3
+  },
+  {
+    "id": "05-16",
+    "kind": "sql",
+    "slug": "semantic-order",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 4
+  },
+  {
+    "id": "05-17",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 5,
+    "lines": 10
+  },
+  {
+    "id": "05-18",
+    "kind": "sql",
+    "slug": "enum-rejects",
+    "run": "skip",
+    "expectError": "22P02",
+    "chapterState": 5,
+    "lines": 1
+  },
+  {
+    "id": "05-19",
+    "kind": "sql",
+    "slug": "enum-range",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 1
+  },
+  {
+    "id": "05-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 5,
+    "lines": 4
+  },
+  {
+    "id": "05-21",
+    "kind": "sql",
+    "slug": "array-unnest",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 1
+  },
+  {
+    "id": "05-22",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 5,
+    "lines": 6
+  },
+  {
+    "id": "05-23",
+    "kind": "sql",
+    "slug": "range-operators",
+    "run": "exec",
+    "chapterState": 5,
+    "lines": 7
+  },
+  {
+    "id": "05-24",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 5,
+    "lines": 4
+  }
+]

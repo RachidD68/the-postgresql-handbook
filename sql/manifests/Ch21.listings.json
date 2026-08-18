@@ -1,0 +1,58 @@
+[
+  {
+    "id": "21-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 21,
+    "lines": 5
+  },
+  {
+    "id": "21-06",
+    "kind": "sql",
+    "slug": "injection-evidence",
+    "run": "exec",
+    "chapterState": 21,
+    "lines": 10
+  },
+  {
+    "id": "21-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 21,
+    "lines": 9
+  },
+  {
+    "id": "21-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 21,
+    "lines": 2
+  },
+  {
+    "id": "21-14",
+    "kind": "sql",
+    "slug": "jsonb-single-document",
+    "run": "exec",
+    "chapterState": 21,
+    "lines": 16
+  },
+  {
+    "id": "21-15",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 21,
+    "lines": 21
+  },
+  {
+    "id": "21-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 21,
+    "lines": 3
+  }
+]

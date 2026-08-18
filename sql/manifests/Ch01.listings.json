@@ -1,0 +1,74 @@
+[
+  {
+    "id": "01-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 1,
+    "lines": 5
+  },
+  {
+    "id": "01-04",
+    "kind": "sql",
+    "slug": "hello-version",
+    "run": "exec",
+    "chapterState": 1,
+    "lines": 1
+  },
+  {
+    "id": "01-05",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 1,
+    "lines": 4
+  },
+  {
+    "id": "01-06",
+    "kind": "sql",
+    "slug": "calculator",
+    "run": "exec",
+    "chapterState": 1,
+    "lines": 1
+  },
+  {
+    "id": "01-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 1,
+    "lines": 4
+  },
+  {
+    "id": "01-08",
+    "kind": "sql",
+    "slug": "list-databases",
+    "run": "exec",
+    "chapterState": 1,
+    "lines": 1
+  },
+  {
+    "id": "01-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 1,
+    "lines": 7
+  },
+  {
+    "id": "01-11",
+    "kind": "sql",
+    "slug": "connect-and-list",
+    "run": "exec",
+    "chapterState": 1,
+    "lines": 2
+  },
+  {
+    "id": "01-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 1,
+    "lines": 2
+  }
+]

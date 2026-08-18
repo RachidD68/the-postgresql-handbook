@@ -1,0 +1,141 @@
+[
+  {
+    "id": "17-01",
+    "kind": "sql",
+    "slug": "create-role-battery",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 3
+  },
+  {
+    "id": "17-02",
+    "kind": "sql",
+    "slug": "roles-catalog",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 4
+  },
+  {
+    "id": "17-03",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 17,
+    "lines": 7
+  },
+  {
+    "id": "17-04",
+    "kind": "sql",
+    "slug": "schema-doorway",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 2
+  },
+  {
+    "id": "17-05",
+    "kind": "sql",
+    "slug": "column-grant",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 2
+  },
+  {
+    "id": "17-06",
+    "kind": "sql",
+    "slug": "least-privilege-app",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 12
+  },
+  {
+    "id": "17-07",
+    "kind": "sql",
+    "slug": "delete-denied",
+    "run": "skip",
+    "expectError": "42501",
+    "chapterState": 17,
+    "lines": 2
+  },
+  {
+    "id": "17-08",
+    "kind": "sql",
+    "slug": "view-surface",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 7
+  },
+  {
+    "id": "17-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 17,
+    "lines": 10
+  },
+  {
+    "id": "17-10",
+    "kind": "sql",
+    "slug": "base-table-dark",
+    "run": "skip",
+    "expectError": "42501",
+    "chapterState": 17,
+    "lines": 2
+  },
+  {
+    "id": "17-11",
+    "kind": "sql",
+    "slug": "rls-policies",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 11
+  },
+  {
+    "id": "17-12",
+    "kind": "sql",
+    "slug": "rls-tenant-one",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 6
+  },
+  {
+    "id": "17-13",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 17,
+    "lines": 13
+  },
+  {
+    "id": "17-14",
+    "kind": "sql",
+    "slug": "rls-tenant-two",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 4
+  },
+  {
+    "id": "17-15",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 17,
+    "lines": 6
+  },
+  {
+    "id": "17-16",
+    "kind": "sql",
+    "slug": "with-check-blocks",
+    "run": "skip",
+    "expectError": "42501",
+    "chapterState": 17,
+    "lines": 7
+  },
+  {
+    "id": "17-17",
+    "kind": "sql",
+    "slug": "security-definer-hardened",
+    "run": "exec",
+    "chapterState": 17,
+    "lines": 14
+  }
+]

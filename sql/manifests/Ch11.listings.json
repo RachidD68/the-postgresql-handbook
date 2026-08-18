@@ -1,0 +1,227 @@
+[
+  {
+    "id": "11-01",
+    "kind": "sql",
+    "slug": "json-vs-jsonb",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 2
+  },
+  {
+    "id": "11-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 4
+  },
+  {
+    "id": "11-03",
+    "kind": "sql",
+    "slug": "arrow-vs-double-arrow",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 7
+  },
+  {
+    "id": "11-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 4
+  },
+  {
+    "id": "11-05",
+    "kind": "sql",
+    "slug": "arrow-type-error",
+    "run": "skip",
+    "expectError": "42883",
+    "chapterState": 11,
+    "lines": 3
+  },
+  {
+    "id": "11-06",
+    "kind": "sql",
+    "slug": "group-by-inside-document",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 5
+  },
+  {
+    "id": "11-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 7
+  },
+  {
+    "id": "11-08",
+    "kind": "sql",
+    "slug": "custom-fields-column",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 10
+  },
+  {
+    "id": "11-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 2
+  },
+  {
+    "id": "11-10",
+    "kind": "sql",
+    "slug": "device-objects",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 9
+  },
+  {
+    "id": "11-11",
+    "kind": "sql",
+    "slug": "deep-paths",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 7
+  },
+  {
+    "id": "11-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 5
+  },
+  {
+    "id": "11-13",
+    "kind": "sql",
+    "slug": "containment-workhorse",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 6
+  },
+  {
+    "id": "11-14",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 5
+  },
+  {
+    "id": "11-15",
+    "kind": "sql",
+    "slug": "existence-family",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 7
+  },
+  {
+    "id": "11-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 6
+  },
+  {
+    "id": "11-17",
+    "kind": "sql",
+    "slug": "jsonpath-door",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 4
+  },
+  {
+    "id": "11-18",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 4
+  },
+  {
+    "id": "11-19",
+    "kind": "sql",
+    "slug": "api-shape",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 12
+  },
+  {
+    "id": "11-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 12
+  },
+  {
+    "id": "11-21",
+    "kind": "sql",
+    "slug": "to-jsonb-whole-row",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 4
+  },
+  {
+    "id": "11-22",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 9
+  },
+  {
+    "id": "11-23",
+    "kind": "sql",
+    "slug": "edit-toolkit",
+    "run": "fragment",
+    "chapterState": 11,
+    "lines": 8
+  },
+  {
+    "id": "11-24",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 9
+  },
+  {
+    "id": "11-25",
+    "kind": "sql",
+    "slug": "explode-to-rows",
+    "run": "exec",
+    "chapterState": 11,
+    "lines": 5
+  },
+  {
+    "id": "11-26",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 7
+  },
+  {
+    "id": "11-27",
+    "kind": "sql",
+    "slug": "schema-avoidance",
+    "run": "fragment",
+    "chapterState": 11,
+    "lines": 9
+  },
+  {
+    "id": "11-28",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 11,
+    "lines": 5
+  }
+]

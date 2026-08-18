@@ -1,0 +1,227 @@
+[
+  {
+    "id": "23-01",
+    "kind": "sql",
+    "slug": "create-extension-vector",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 3
+  },
+  {
+    "id": "23-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 7
+  },
+  {
+    "id": "23-03",
+    "kind": "sql",
+    "slug": "kb-article-ddl",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 15
+  },
+  {
+    "id": "23-04",
+    "kind": "sql",
+    "slug": "vector-literal",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 2
+  },
+  {
+    "id": "23-05",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 4
+  },
+  {
+    "id": "23-06",
+    "kind": "sql",
+    "slug": "dimension-mismatch",
+    "run": "skip",
+    "expectError": "22000",
+    "chapterState": 23,
+    "lines": 1
+  },
+  {
+    "id": "23-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 1
+  },
+  {
+    "id": "23-08",
+    "kind": "sql",
+    "slug": "insert-precomputed-vector",
+    "run": "fragment",
+    "chapterState": 23,
+    "lines": 12
+  },
+  {
+    "id": "23-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 6
+  },
+  {
+    "id": "23-10",
+    "kind": "sql",
+    "slug": "canonical-knn",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 10
+  },
+  {
+    "id": "23-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 8
+  },
+  {
+    "id": "23-12",
+    "kind": "sql",
+    "slug": "three-operators",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 15
+  },
+  {
+    "id": "23-13",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 4
+  },
+  {
+    "id": "23-14",
+    "kind": "sql",
+    "slug": "hnsw-index",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 2
+  },
+  {
+    "id": "23-15",
+    "kind": "sql",
+    "slug": "hnsw-vs-exact-plans",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 19
+  },
+  {
+    "id": "23-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "shape",
+    "chapterState": 23,
+    "lines": 23
+  },
+  {
+    "id": "23-17",
+    "kind": "sql",
+    "slug": "ef-search-knob",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 13
+  },
+  {
+    "id": "23-18",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 12
+  },
+  {
+    "id": "23-19",
+    "kind": "sql",
+    "slug": "semantic-search-sell",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 11
+  },
+  {
+    "id": "23-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 8
+  },
+  {
+    "id": "23-21",
+    "kind": "sql",
+    "slug": "jsonb-filter-plus-ann",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 14
+  },
+  {
+    "id": "23-22",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 10
+  },
+  {
+    "id": "23-23",
+    "kind": "sql",
+    "slug": "threshold-honesty",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 14
+  },
+  {
+    "id": "23-24",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 8
+  },
+  {
+    "id": "23-28",
+    "kind": "sql",
+    "slug": "two-lanes",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 20
+  },
+  {
+    "id": "23-29",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 17
+  },
+  {
+    "id": "23-30",
+    "kind": "sql",
+    "slug": "hybrid-rrf-fusion",
+    "run": "exec",
+    "chapterState": 23,
+    "lines": 28
+  },
+  {
+    "id": "23-31",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 23,
+    "lines": 11
+  }
+]

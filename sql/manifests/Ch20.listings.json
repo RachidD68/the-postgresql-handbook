@@ -1,0 +1,58 @@
+[
+  {
+    "id": "20-02",
+    "kind": "sql",
+    "slug": "replication-lag-query",
+    "run": "exec",
+    "chapterState": 20,
+    "lines": 3
+  },
+  {
+    "id": "20-03",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 20,
+    "lines": 3
+  },
+  {
+    "id": "20-04",
+    "kind": "sql",
+    "slug": "create-publication",
+    "run": "exec",
+    "chapterState": 20,
+    "lines": 1
+  },
+  {
+    "id": "20-05",
+    "kind": "sql",
+    "slug": "replica-prep",
+    "run": "none",
+    "chapterState": 20,
+    "lines": 5
+  },
+  {
+    "id": "20-06",
+    "kind": "sql",
+    "slug": "create-subscription",
+    "run": "none",
+    "chapterState": 20,
+    "lines": 16
+  },
+  {
+    "id": "20-07",
+    "kind": "sql",
+    "slug": "row-filtered-publication",
+    "run": "exec",
+    "chapterState": 20,
+    "lines": 4
+  },
+  {
+    "id": "20-08",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 20,
+    "lines": 4
+  }
+]

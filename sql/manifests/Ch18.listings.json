@@ -1,0 +1,130 @@
+[
+  {
+    "id": "18-01",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 18,
+    "lines": 2
+  },
+  {
+    "id": "18-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 18,
+    "lines": 4
+  },
+  {
+    "id": "18-04",
+    "kind": "sql",
+    "slug": "dead-tuples-measured",
+    "run": "exec",
+    "chapterState": 18,
+    "lines": 8
+  },
+  {
+    "id": "18-05",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 18,
+    "lines": 11
+  },
+  {
+    "id": "18-06",
+    "kind": "sql",
+    "slug": "vacuum-collects",
+    "run": "exec",
+    "chapterState": 18,
+    "lines": 6
+  },
+  {
+    "id": "18-07",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 18,
+    "lines": 10
+  },
+  {
+    "id": "18-08",
+    "kind": "sql",
+    "slug": "vacuum-full",
+    "run": "exec",
+    "chapterState": 18,
+    "lines": 5
+  },
+  {
+    "id": "18-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 18,
+    "lines": 7
+  },
+  {
+    "id": "18-10",
+    "kind": "sql",
+    "slug": "autovacuum-settings",
+    "run": "exec",
+    "chapterState": 18,
+    "lines": 7
+  },
+  {
+    "id": "18-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 18,
+    "lines": 7
+  },
+  {
+    "id": "18-12",
+    "kind": "sql",
+    "slug": "per-table-tuning",
+    "run": "exec",
+    "chapterState": 18,
+    "lines": 4
+  },
+  {
+    "id": "18-13",
+    "kind": "sql",
+    "slug": "pg-stat-statements",
+    "run": "none",
+    "chapterState": 18,
+    "lines": 9
+  },
+  {
+    "id": "18-14",
+    "kind": "sql",
+    "slug": "activity-triage",
+    "run": "exec",
+    "chapterState": 18,
+    "lines": 6
+  },
+  {
+    "id": "18-15",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 18,
+    "lines": 5
+  },
+  {
+    "id": "18-16",
+    "kind": "sql",
+    "slug": "cache-hit-ratio",
+    "run": "exec",
+    "chapterState": 18,
+    "lines": 6
+  },
+  {
+    "id": "18-17",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 18,
+    "lines": 4
+  }
+]

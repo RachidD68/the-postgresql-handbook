@@ -1,0 +1,250 @@
+[
+  {
+    "id": "14-01",
+    "kind": "sql",
+    "slug": "begin-rollback",
+    "run": "exec",
+    "chapterState": 14,
+    "lines": 16
+  },
+  {
+    "id": "14-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 13
+  },
+  {
+    "id": "14-03",
+    "kind": "sql",
+    "slug": "savepoint",
+    "run": "exec-tolerant",
+    "chapterState": 14,
+    "lines": 12
+  },
+  {
+    "id": "14-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 12
+  },
+  {
+    "id": "14-05",
+    "kind": "sql",
+    "slug": "xmin-made-visible",
+    "run": "exec",
+    "chapterState": 14,
+    "lines": 11
+  },
+  {
+    "id": "14-06",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 13
+  },
+  {
+    "id": "14-07",
+    "kind": "sql",
+    "slug": "read-committed",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 15
+  },
+  {
+    "id": "14-08",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 14
+  },
+  {
+    "id": "14-09",
+    "kind": "sql",
+    "slug": "repeatable-read",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 18
+  },
+  {
+    "id": "14-10",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 19
+  },
+  {
+    "id": "14-11",
+    "kind": "sql",
+    "slug": "serializable-skew",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 24
+  },
+  {
+    "id": "14-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 19
+  },
+  {
+    "id": "14-13",
+    "kind": "sql",
+    "slug": "lost-update",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 21
+  },
+  {
+    "id": "14-14",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 22
+  },
+  {
+    "id": "14-15",
+    "kind": "sql",
+    "slug": "for-update-fix",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 23
+  },
+  {
+    "id": "14-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 23
+  },
+  {
+    "id": "14-17",
+    "kind": "sql",
+    "slug": "nowait",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 9
+  },
+  {
+    "id": "14-18",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 8
+  },
+  {
+    "id": "14-19",
+    "kind": "sql",
+    "slug": "the-queue-table",
+    "run": "exec",
+    "chapterState": 14,
+    "lines": 22
+  },
+  {
+    "id": "14-20",
+    "kind": "sql",
+    "slug": "the-claim-query",
+    "run": "exec",
+    "chapterState": 14,
+    "lines": 15
+  },
+  {
+    "id": "14-21",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 8
+  },
+  {
+    "id": "14-22",
+    "kind": "sql",
+    "slug": "two-workers",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 21
+  },
+  {
+    "id": "14-23",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 16
+  },
+  {
+    "id": "14-24",
+    "kind": "sql",
+    "slug": "complete-and-retry",
+    "run": "fragment",
+    "chapterState": 14,
+    "lines": 12
+  },
+  {
+    "id": "14-25",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 7
+  },
+  {
+    "id": "14-26",
+    "kind": "sql",
+    "slug": "advisory-lock",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 14
+  },
+  {
+    "id": "14-27",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 24
+  },
+  {
+    "id": "14-28",
+    "kind": "sql",
+    "slug": "deadlock",
+    "run": "two-conn",
+    "chapterState": 14,
+    "lines": 25
+  },
+  {
+    "id": "14-29",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 16
+  },
+  {
+    "id": "14-30",
+    "kind": "sql",
+    "slug": "optimistic-xmin",
+    "run": "exec",
+    "chapterState": 14,
+    "lines": 9
+  },
+  {
+    "id": "14-31",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 14,
+    "lines": 2
+  }
+]

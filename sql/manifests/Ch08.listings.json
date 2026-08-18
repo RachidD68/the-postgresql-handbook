@@ -1,0 +1,235 @@
+[
+  {
+    "id": "08-01",
+    "kind": "sql",
+    "slug": "global-aggregates",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 5
+  },
+  {
+    "id": "08-02",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 4
+  },
+  {
+    "id": "08-03",
+    "kind": "sql",
+    "slug": "count-variants",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 4
+  },
+  {
+    "id": "08-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 4
+  },
+  {
+    "id": "08-05",
+    "kind": "sql",
+    "slug": "group-by-status",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 4
+  },
+  {
+    "id": "08-06",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 7
+  },
+  {
+    "id": "08-07",
+    "kind": "sql",
+    "slug": "ungrouped-column",
+    "run": "skip",
+    "expectError": "42803",
+    "chapterState": 8,
+    "lines": 3
+  },
+  {
+    "id": "08-08",
+    "kind": "sql",
+    "slug": "per-agent-workload",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 5
+  },
+  {
+    "id": "08-09",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 9
+  },
+  {
+    "id": "08-10",
+    "kind": "sql",
+    "slug": "fan-out-double-count",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 15
+  },
+  {
+    "id": "08-11",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 13
+  },
+  {
+    "id": "08-12",
+    "kind": "sql",
+    "slug": "having-heavy-filers",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 7
+  },
+  {
+    "id": "08-13",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 5
+  },
+  {
+    "id": "08-14",
+    "kind": "sql",
+    "slug": "filter-vs-case",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 19
+  },
+  {
+    "id": "08-15",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 13
+  },
+  {
+    "id": "08-16",
+    "kind": "sql",
+    "slug": "string-agg-tags",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 8
+  },
+  {
+    "id": "08-17",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 10
+  },
+  {
+    "id": "08-18",
+    "kind": "sql",
+    "slug": "weekly-trend",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 5
+  },
+  {
+    "id": "08-19",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 14
+  },
+  {
+    "id": "08-20",
+    "kind": "sql",
+    "slug": "grouping-sets",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 5
+  },
+  {
+    "id": "08-21",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 11
+  },
+  {
+    "id": "08-22",
+    "kind": "sql",
+    "slug": "rollup-labeled",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 7
+  },
+  {
+    "id": "08-23",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 7
+  },
+  {
+    "id": "08-24",
+    "kind": "sql",
+    "slug": "dashboard-agent-weeks",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 8
+  },
+  {
+    "id": "08-25",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 18
+  },
+  {
+    "id": "08-26",
+    "kind": "sql",
+    "slug": "dashboard-resolution",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 8
+  },
+  {
+    "id": "08-27",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 6
+  },
+  {
+    "id": "08-28",
+    "kind": "sql",
+    "slug": "dashboard-sla-breaches",
+    "run": "exec",
+    "chapterState": 8,
+    "lines": 11
+  },
+  {
+    "id": "08-29",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 8,
+    "lines": 7
+  }
+]

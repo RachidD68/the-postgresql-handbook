@@ -1,0 +1,162 @@
+[
+  {
+    "id": "19-01",
+    "kind": "sql",
+    "slug": "partitioned-parent",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 11
+  },
+  {
+    "id": "19-02",
+    "kind": "sql",
+    "slug": "monthly-partitions",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 17
+  },
+  {
+    "id": "19-03",
+    "kind": "sql",
+    "slug": "copy-and-swap",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 16
+  },
+  {
+    "id": "19-04",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 19,
+    "lines": 11
+  },
+  {
+    "id": "19-05",
+    "kind": "sql",
+    "slug": "describe-partitioned",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 1
+  },
+  {
+    "id": "19-06",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 19,
+    "lines": 14
+  },
+  {
+    "id": "19-07",
+    "kind": "sql",
+    "slug": "pruning-proof-by-data",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 6
+  },
+  {
+    "id": "19-08",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 19,
+    "lines": 4
+  },
+  {
+    "id": "19-09",
+    "kind": "sql",
+    "slug": "pruned-plan",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 4
+  },
+  {
+    "id": "19-10",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 19,
+    "lines": 11
+  },
+  {
+    "id": "19-11",
+    "kind": "sql",
+    "slug": "pruning-defeated",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 4
+  },
+  {
+    "id": "19-12",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 19,
+    "lines": 23
+  },
+  {
+    "id": "19-13",
+    "kind": "sql",
+    "slug": "delete-vs-detach",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 10
+  },
+  {
+    "id": "19-14",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "illustrative",
+    "chapterState": 19,
+    "lines": 5
+  },
+  {
+    "id": "19-15",
+    "kind": "sql",
+    "slug": "detach-aftermath",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 3
+  },
+  {
+    "id": "19-16",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 19,
+    "lines": 9
+  },
+  {
+    "id": "19-17",
+    "kind": "sql",
+    "slug": "index-cascade",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 8
+  },
+  {
+    "id": "19-18",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 19,
+    "lines": 8
+  },
+  {
+    "id": "19-19",
+    "kind": "sql",
+    "slug": "partitionwise-aggregate",
+    "run": "exec",
+    "chapterState": 19,
+    "lines": 3
+  },
+  {
+    "id": "19-20",
+    "kind": "psql-output",
+    "slug": null,
+    "expect": "match",
+    "chapterState": 19,
+    "lines": 13
+  }
+]

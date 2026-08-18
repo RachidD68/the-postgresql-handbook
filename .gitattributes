@@ -13,3 +13,4 @@ sql/ch*/** linguist-generated=true
 *.conf    text eol=lf
 *.ps1     text eol=crlf
 *.sh      text eol=lf
+*.json    text eol=lf
