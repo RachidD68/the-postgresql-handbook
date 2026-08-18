@@ -64,3 +64,16 @@ Seeds use fixed ids, fixed timestamps (the book's "today" is
 your result grids match the book's byte for byte. The reset script pins
 `jit = off`, `work_mem`, and `random_page_cost` at the database level so your
 `EXPLAIN` output matches too.
+
+## License
+
+Two licenses, deliberately different:
+
+- **This repository** — schema, seeds, listings, exercise solutions, and tooling —
+  is **MIT**. Use it in commercial work without restriction.
+- **The book itself** (text, figures, and the listings as printed) is
+  **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**: share
+  and adapt it freely with attribution, non-commercially, under the same license.
+
+The split is intentional. The code should be something you can paste into work on
+Monday; the prose is something you can pass to a colleague but not resell.
