@@ -132,6 +132,9 @@ if [ -d "$SCHEMA/migrations" ]; then
             exit 1
         fi
         migch=$((10#$migch))
+        # Migrations normally apply STRICTLY BELOW N (entry-state semantics).
+        # 110 is the one exception: seed-kb.sql needs the vector column, so
+        # the migration must run AT 23 rather than before it.
         if [ "$migch" -lt "$CHAPTER" ] || { [ "$migch" -eq 23 ] && [ "$CHAPTER" -eq 23 ]; }; then
             runf lumina "$mig"
             applied=$((applied + 1))

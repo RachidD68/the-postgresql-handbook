@@ -186,6 +186,9 @@ if (Test-Path $migrationsDir) {
     Get-ChildItem $migrationsDir -Filter '*.sql' | Sort-Object Name | ForEach-Object {
         if ($_.Name -match '^\d{3}-ch(\d{2})-') {
             $migCh = [int]$Matches[1]
+            # Migrations normally apply STRICTLY BELOW N (entry-state semantics).
+            # 110 is the one exception: seed-kb.sql needs the vector column, so
+            # the migration must run AT 23 rather than before it.
             if ($migCh -lt $Chapter -or ($migCh -eq 23 -and $Chapter -eq 23)) {
                 Invoke-Sql -Db lumina -File $_.FullName
                 $script:applied++
