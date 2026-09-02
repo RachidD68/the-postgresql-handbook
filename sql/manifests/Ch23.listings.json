@@ -198,7 +198,7 @@
     "slug": "two-lanes",
     "run": "exec",
     "chapterState": 23,
-    "lines": 20
+    "lines": 24
   },
   {
     "id": "23-29",
@@ -206,7 +206,7 @@
     "slug": null,
     "expect": "match",
     "chapterState": 23,
-    "lines": 17
+    "lines": 19
   },
   {
     "id": "23-30",
@@ -214,7 +214,7 @@
     "slug": "hybrid-rrf-fusion",
     "run": "exec",
     "chapterState": 23,
-    "lines": 28
+    "lines": 30
   },
   {
     "id": "23-31",

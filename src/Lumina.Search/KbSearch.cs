@@ -84,7 +84,7 @@ public sealed class KbSearch(NpgsqlDataSource source, IEmbedder embedder)
                 SELECT id, title,
                        row_number() OVER (ORDER BY embedding <=> $1, id) AS rank
                 FROM kb_article
-                ORDER BY embedding <=> $1
+                ORDER BY embedding <=> $1, id
                 LIMIT 20
             ), lexical_hits AS (
                 SELECT id, title,
@@ -95,6 +95,8 @@ public sealed class KbSearch(NpgsqlDataSource source, IEmbedder embedder)
                        ) AS rank
                 FROM kb_article
                 WHERE search_tsv @@ websearch_to_tsquery('english', $2)
+                ORDER BY ts_rank(search_tsv,
+                                 websearch_to_tsquery('english', $2)) DESC, id
                 LIMIT 20
             )
             SELECT id,

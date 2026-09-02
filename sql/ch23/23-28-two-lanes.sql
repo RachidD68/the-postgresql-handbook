@@ -1,6 +1,10 @@
 -- Listing 23.28 — The PostgreSQL Handbook
 -- Generated from Book/chapters/Ch23/render.js — DO NOT EDIT BY HAND
 -- Requires: scripts/reset-to-chapter.ps1 -Chapter 23
+-- The lexical lane needs its own index: the HNSW's counterpart.
+CREATE INDEX IF NOT EXISTS kb_article_search_idx
+    ON kb_article USING gin (search_tsv);
+
 SELECT embedding AS qv
 FROM kb_article
 WHERE title LIKE 'Document feeder%'

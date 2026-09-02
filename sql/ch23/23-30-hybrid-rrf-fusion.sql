@@ -10,7 +10,7 @@ WITH vector_hits AS (
     SELECT id, title,
            row_number() OVER (ORDER BY embedding <=> :'qv'::vector, id) AS rank
     FROM kb_article
-    ORDER BY embedding <=> :'qv'::vector
+    ORDER BY embedding <=> :'qv'::vector, id
     LIMIT 20
 ), lexical_hits AS (
     SELECT id, title,
@@ -20,6 +20,8 @@ WITH vector_hits AS (
            ) AS rank
     FROM kb_article
     WHERE search_tsv @@ websearch_to_tsquery('english', 'printer')
+    ORDER BY ts_rank(search_tsv,
+                     websearch_to_tsquery('english', 'printer')) DESC, id
     LIMIT 20
 )
 SELECT coalesce(v.title, l.title) AS title,

@@ -44,9 +44,14 @@ FROM agent AS a
 WHERE a.full_name = 'Agent 08';
 -- Agent 08: 3080 -> 3081 resolved, jumping from page 2 into page 1.
 
--- Page 2 again, keyset (same anchor): begins at Agent 01 — no duplicate,
--- no gap. Agent 08 left the page upward; everyone the reader has not yet
--- seen is still exactly once in the pages that follow.
+-- Page 2 again, keyset (same anchor): begins at Agent 01 and repeats
+-- nothing — but Agent 08 now sorts ABOVE the anchor, and it was not on
+-- the page 1 the reader was already served, so no page will ever show
+-- it: a gap. State the guarantee precisely, because it is narrower than
+-- it first looks. Keyset anchors to the last row served rather than to a
+-- row count, so it never duplicates, and it never skips a row that merely
+-- arrived or left. A row whose own sort key moves back across the cursor
+-- is the one case outside it.
 WITH lb AS (
     SELECT a.full_name, count(t.resolution_minutes) AS resolved
     FROM agent AS a

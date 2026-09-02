@@ -1,7 +1,7 @@
 # The PostgreSQL Handbook — Companion Code
 
 The Lumina Helpdesk database, every SQL listing, and the exercise solutions for
-*The PostgreSQL Handbook: From First Query to Production Database* (PostgreSQL 18).
+*The PostgreSQL Handbook: From First Query to Production* (PostgreSQL 18).
 
 ## Quick start
 

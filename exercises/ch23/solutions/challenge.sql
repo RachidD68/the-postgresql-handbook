@@ -15,12 +15,12 @@ FROM kb_article
 WHERE title LIKE 'Document feeder%'
 ORDER BY id LIMIT 1 \gset
 
--- Weighted fusion (the unweighted original is listing 23.28 verbatim):
+-- Weighted fusion (the unweighted original is listing 23.30 verbatim):
 WITH vector_hits AS (
     SELECT id, title,
            row_number() OVER (ORDER BY embedding <=> :'qv'::vector, id) AS rank
     FROM kb_article
-    ORDER BY embedding <=> :'qv'::vector
+    ORDER BY embedding <=> :'qv'::vector, id
     LIMIT 20
 ), lexical_hits AS (
     SELECT id, title,
@@ -30,6 +30,8 @@ WITH vector_hits AS (
            ) AS rank
     FROM kb_article
     WHERE search_tsv @@ websearch_to_tsquery('english', :'lexterm')
+    ORDER BY ts_rank(search_tsv,
+                     websearch_to_tsquery('english', :'lexterm')) DESC, id
     LIMIT 20
 )
 SELECT coalesce(v.title, l.title) AS title,

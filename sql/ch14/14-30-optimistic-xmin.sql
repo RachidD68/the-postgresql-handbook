@@ -9,4 +9,4 @@ WHERE id = 1
 UPDATE ticket
 SET subject = 'someone else edited first'
 WHERE id = 1
-  AND xmin::text = '1';
+  AND xmin = '1'::xid;

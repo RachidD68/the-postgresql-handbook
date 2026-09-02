@@ -1,3 +1,5 @@
+NOTICE:  relation "kb_article_search_idx" already exists, skipping
+CREATE INDEX
  id  |                     title                     | rank
 -----+-----------------------------------------------+------
    1 | Printer jams when feeding multiple sheets     | 0.61

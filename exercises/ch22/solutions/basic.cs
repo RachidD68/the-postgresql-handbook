@@ -36,7 +36,7 @@ public static class TagQueryDemo
 
         Console.WriteLine(tags.ToQueryString());
         // The SQL to expect — Chapter 7's two-join bridge walk (listing
-        // 7.8's shape), verify with ToQueryString():
+        // 7.22's shape), verify with ToQueryString():
         //   SELECT t1.name AS "Name"
         //   FROM lumina.ticket AS t
         //   INNER JOIN lumina.ticket_tag AS t0 ON t.id = t0.ticket_id
