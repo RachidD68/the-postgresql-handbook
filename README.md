@@ -119,10 +119,9 @@ dotnet run --project src/Lumina.Search        # Chapter 23: pgvector hybrid sear
 | `sql/manifests/` | **Generated** — the listing manifest per chapter, kept in sync with the book at render time |
 | `exercises/chNN/solutions/` | Worked solutions (basic / intermediate / challenge) for all 69 exercises |
 | `scripts/` | `reset-to-chapter.ps1 -Chapter N` (Windows) / `reset-to-chapter.sh N` (macOS/Linux) — rebuild the database to the state chapter N expects |
-| `tools/` | The verification harness (`verify-listings.ps1`), output capture, and the book-vs-repo drift checker |
+| `tools/` | The verification harness (`verify-listings.ps1`) and the helpers it drives — output capture, output normalisation, and the two-connection runner Chapter 14 describes |
 | `src/` | The three-project C# solution for Chapters 21–23: `Lumina.Data` (Npgsql), `Lumina.EfCore` (EF Core), `Lumina.Search` (pgvector) |
 | `config/` | The planner settings the book's `EXPLAIN` output was captured under |
-| `illustrations/` | The source PNGs for every figure in the book, kept in sync with `illustrations/` in the book project |
 
 ## Chapter state
 
